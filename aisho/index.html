@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>恋愛動物 相性診断 | ふたりの恋のかたちが見えてくる</title>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="恋愛動物 相性診断">
+<meta property="og:description" content="あなたと相手の恋愛動物タイプを選ぶだけで、ふたりの相性と、うまくいくヒントがわかります。">
+<meta property="og:url" content="https://chi330-lab.github.io/love-animal-shindan/aisho/">
+<meta property="og:image" content="https://chi330-lab.github.io/love-animal-shindan/aisho/og-aisho.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="恋愛動物 相性診断">
+<meta name="twitter:description" content="あなたと相手の恋愛動物タイプを選ぶだけで、ふたりの相性と、うまくいくヒントがわかります。">
+<meta name="twitter:image" content="https://chi330-lab.github.io/love-animal-shindan/aisho/og-aisho.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JJY0KPQSFB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JJY0KPQSFB');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .pick-label{font-size:12.5px; letter-spacing:.2em; color:var(--gold); text-align:center; margin:4px 0 10px;}
+  .pick-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:8px; margin-bottom:20px;}
+  button.pick{
+    appearance:none; cursor:pointer; font-family:inherit; color:var(--cream);
+    display:flex; flex-direction:column; align-items:center; gap:4px;
+    padding:10px 4px 8px; border:1px solid var(--line); border-radius:14px;
+    background:rgba(255,255,255,0.02);
+    transition:background .15s ease, border-color .15s ease, transform .1s ease;
+  }
+  button.pick svg{width:46px; height:46px;}
+  button.pick span{font-size:11px; color:var(--muted);}
+  button.pick:hover{border-color:var(--gold);}
+  button.pick[aria-pressed="true"]{border-color:var(--gold-soft); background:rgba(217,162,160,0.14); box-shadow:0 0 0 2px rgba(238,195,191,0.25) inset;}
+  button.pick[aria-pressed="true"] span{color:var(--cream);}
+  button.pick:focus-visible{outline:2px solid var(--gold-soft); outline-offset:3px;}
+  button.primary:disabled{opacity:.45; cursor:not-allowed; transform:none; box-shadow:none;}
+  .to-shindan{margin-top:14px; text-align:center; font-size:12px;}
+  .to-shindan a{color:var(--gold-soft); text-underline-offset:3px;}
+
+  .pair{display:flex; align-items:center; justify-content:center; gap:6px; margin:4px 0 12px;}
+  .pair .who{display:flex; flex-direction:column; align-items:center; gap:4px;}
+  .pair .badge{width:104px; height:104px; border-radius:50%; display:flex; align-items:center; justify-content:center;}
+  .pair .badge svg{width:92px; height:92px;}
+  .pair .who span{font-size:11.5px; color:var(--muted);}
+  .pair .heart{font-size:22px; color:var(--gold-soft); margin-bottom:18px;}
+  .score{font-family:'Shippori Mincho', serif; font-weight:800; font-size:52px; text-align:center; line-height:1.1; color:var(--cream);}
+  .score small{font-size:22px; margin-left:2px;}
+  .rank{display:block; width:max-content; max-width:100%; margin:8px auto 16px; font-size:12px; padding:5px 14px; border-radius:999px; border:1px solid var(--gold); color:var(--gold-soft);}
+  .advice{
+    margin:0 auto 22px; max-width:340px; padding:14px 16px; border-radius:14px;
+    border:1px dashed var(--line); background:rgba(255,255,255,0.02);
+    font-size:13px; line-height:1.9; color:var(--cream); text-align:center;
+    word-break:keep-all; overflow-wrap:break-word;
+  }
+  .advice b{display:block; font-size:11.5px; letter-spacing:.2em; color:var(--gold); margin-bottom:4px; font-weight:500;}
+</style>
+</head>
+<body>
+
+<div class="stars" id="stars"></div>
+
+<div class="app">
+  <div class="card" id="card"></div>
+  <footer class="credit">恋愛動物 相性診断 &mdash; <a href="../">恋愛動物タイプ診断</a>の姉妹サイト<br>当サイトはアフィリエイトプログラムによる広告（PR）を掲載しています。<br>アクセス解析のため Google アナリティクス（Cookie）を使用しています。個人を特定する情報は収集していません。<br>相性診断はエンターテインメントです。ふたりの関係を決めつけるものではありません。</footer>
+</div>
+
+<script src="../common.js"></script>
+<script>
+const TYPE_ORDER = ["cat","dog","swan","fox","rabbit","owl"];
+
+/* 相性データ（21通り）。キーは TYPE_ORDER の順に並べた "a-b" */
+const PAIRS = {
+  "cat-cat":{score:82, title:"自由を大切にし合う、気ままなふたり",
+    text:"お互いに干渉しすぎないので、一緒にいても息がしやすい関係。ただ、どちらも本音を言わずに待ってしまうので、気づけば距離が開いていることも。",
+    advice:"「会いたい」は、どちらかが先に言ってみて。それだけで、ふたりの時間はぐっと増えます。"},
+  "cat-dog":{score:76, title:"追いかける子犬と、するりとかわす黒猫",
+    text:"子犬のまっすぐな好意は、黒猫にとって少し刺激的。楽しい反面、子犬は不安に、黒猫は窮屈に感じやすい組み合わせです。",
+    advice:"子犬は返事を少しだけ待ってみて。黒猫は「ちゃんと好きだよ」の一言を。それで、ふたりともぐっと楽になります。"},
+  "cat-swan":{score:90, title:"白鳥の静けさが、黒猫の警戒をほどく",
+    text:"追いかけない白鳥のそばでは、黒猫は逃げる理由がなくなります。気づけば自分から寄り添っている、そんな自然な関係。",
+    advice:"黒猫は、白鳥のやさしさに甘えすぎないで。ときどき、自分から気持ちを返してあげて。"},
+  "cat-fox":{score:78, title:"駆け引き上手どうしの、ドキドキする関係",
+    text:"主導権の取り合いで盛り上がる、刺激的なふたり。ただ、お互いに本音を見せないので、肝心なところですれ違いやすいかも。",
+    advice:"たまには駆け引きをお休みする日を。素直に話せた日のほうが、ずっと距離が縮まります。"},
+  "cat-rabbit":{score:72, title:"つながりたいうさぎと、ひとり時間がほしい黒猫",
+    text:"求める距離感が正反対のふたり。だからこそ、相手の「当たり前」を知るたびに、自分の世界が広がっていく関係です。",
+    advice:"「ひとりの時間」と「ふたりの時間」を、あらかじめ話して決めておくと、どちらも安心できます。"},
+  "cat-owl":{score:86, title:"踏み込みすぎない、大人の信頼関係",
+    text:"どちらも相手のペースを大切にできるので、ゆっくり静かに信頼が育ちます。ベタベタしないけれど、離れない関係。",
+    advice:"察し合えるふたりだからこそ、大切なことは言葉にして伝え合って。"},
+  "dog-dog":{score:88, title:"まっすぐな好きを、ぶつけ合えるふたり",
+    text:"気持ちを隠さず伝え合えるので、一緒にいるとにぎやかで温かい関係。そのぶん、片方の不安がもう片方にも伝わりやすいところも。",
+    advice:"不安になったら、責める前に「どうしたの？」と聞き合うこと。それだけで、ほとんどの心配は消えていきます。"},
+  "dog-swan":{score:94, title:"一途な想いを、穏やかに受け止める",
+    text:"子犬のまっすぐな愛情を、白鳥はあわてず受け止められます。子犬は安心を知り、白鳥は愛される喜びを知る、あたたかい組み合わせ。",
+    advice:"白鳥は、気持ちを少しだけ言葉や態度で多めに伝えてあげて。子犬はそれで、もっと輝きます。"},
+  "dog-fox":{score:74, title:"素直な子犬と、本音を隠す狐",
+    text:"子犬の素直さは、狐にとって新鮮でまぶしいもの。ただ、狐の駆け引きに子犬が振り回されて、疲れてしまうこともあります。",
+    advice:"狐は、ほんの少しだけ本音を見せてあげて。子犬はそれを、何より大切にしてくれます。"},
+  "dog-rabbit":{score:84, title:"いつも一緒にいたい、愛情深いふたり",
+    text:"どちらも愛情表現が豊かで、寂しい思いをさせない関係。ただ、寂しがりどうしなので、相手だけが心の支えになりすぎないように。",
+    advice:"それぞれの友達や趣味の時間も大切に。ひとりの時間があるほど、ふたりの時間はもっと楽しくなります。"},
+  "dog-owl":{score:80, title:"明るさが、慎重な心の扉をノックする",
+    text:"子犬の明るさと素直さは、梟の警戒をゆっくりほどいていきます。焦らずに待てれば、とても深い絆になる組み合わせ。",
+    advice:"子犬は、梟のペースを信じて待ってあげて。梟は、心を開いたら小さなサインで伝えてあげて。"},
+  "swan-swan":{score:92, title:"穏やかで、ゆるがない安心感",
+    text:"感情の波が少なく、信頼し合える安定したふたり。けんかは少ないけれど、刺激も少なめで、マンネリになりやすいところも。",
+    advice:"ときどき、行ったことのない場所へふたりで出かけてみて。新しい一面に、また恋ができます。"},
+  "swan-fox":{score:85, title:"安心できる場所で、狐は素顔に戻れる",
+    text:"白鳥の変わらない穏やかさの前では、狐は駆け引きをする必要がなくなります。本当の自分を見せられる、貴重な相手。",
+    advice:"白鳥は、狐がぽろっとこぼす小さな本音を見逃さないで。それが、狐の「信じてる」の合図です。"},
+  "swan-rabbit":{score:96, title:"不安を、静かな安心感が包み込む",
+    text:"うさぎの「つながりが切れる不安」を、白鳥の安定感がやさしく包みます。うさぎが一番ほっとできる、とても安心できる組み合わせ。",
+    advice:"うさぎは、安心をもらったら「ありがとう」をたくさん伝えて。白鳥にとって、それが何よりのご褒美です。"},
+  "swan-owl":{score:93, title:"静かに深く、信頼を重ねていくふたり",
+    text:"慎重な梟も、白鳥のそばなら安心して心を開けます。派手さはないけれど、時間をかけるほど深まる、穏やかな関係。",
+    advice:"言わなくても伝わるふたりだからこそ、ときどき気持ちを言葉で確かめ合う時間を。"},
+  "fox-fox":{score:77, title:"似た者どうし、本音のさぐり合い",
+    text:"相手の気持ちが手に取るように分かるからこそ、お互いに先に本音を見せたくない。でも、認め合えたら最強のパートナーになれます。",
+    advice:"「先に本音を言ったほうが勝ち」くらいの気持ちで。素直になった瞬間、ふたりの関係は一気に変わります。"},
+  "fox-rabbit":{score:73, title:"確かめたいうさぎと、はぐらかす狐",
+    text:"うさぎは気持ちを確かめたくて、狐はつい、はぐらかしてしまう。すれ違いやすいけれど、狐がうさぎを大切に思う気持ちは本物です。",
+    advice:"狐は、安心させる言葉をはっきりと。うさぎは、確かめたくなったら、まずひと呼吸おいてみて。"},
+  "fox-owl":{score:83, title:"見極め上手どうしの、知的な恋",
+    text:"どちらも相手をよく観察するタイプ。信頼できるまでに時間はかかりますが、一度信じ合えたら、とても深く安定した関係に。",
+    advice:"疑う理由を探すより、信じる理由を数えてみて。ふたりなら、きっとたくさん見つかります。"},
+  "rabbit-rabbit":{score:81, title:"寄り添い合う、あまくてやさしい関係",
+    text:"お互いの寂しさが分かるので、思いやりにあふれたふたり。ただ、不安な気持ちが重なると、一緒に落ち込んでしまうことも。",
+    advice:"ふたり以外にも、話を聞いてくれる人や場所を持っておいて。それが、ふたりの関係を守ってくれます。"},
+  "rabbit-owl":{score:79, title:"静かな梟と、つながりを求めるうさぎ",
+    text:"うさぎは梟の静けさに不安を感じ、梟はうさぎの求めに戸惑うかもしれません。でも理解が進むほど、とてもやさしい関係になります。",
+    advice:"梟は「大丈夫だよ」を、心の中だけでなく声に出して。うさぎはそれだけで、ぐっと安心できます。"},
+  "owl-owl":{score:87, title:"ゆっくり、でも確かに近づくふたり",
+    text:"慎重どうしなので、始まるまでに時間がかかる関係。そのぶん、一度心を許し合えたら、誰よりも深く長く続いていきます。",
+    advice:"どちらかが、小さな一歩を先に踏み出して。その一歩を、相手はずっと待っています。"}
+};
+
+function pairKey(a, b){
+  return TYPE_ORDER.indexOf(a) <= TYPE_ORDER.indexOf(b) ? `${a}-${b}` : `${b}-${a}`;
+}
+function rankLabel(score){
+  if(score >= 90) return "とても安心できる相性";
+  if(score >= 80) return "育てるほど深まる相性";
+  return "違いから学び合える相性";
+}
+
+const SITE_URL = "https://chi330-lab.github.io/love-animal-shindan/aisho/";
+const card = document.getElementById('card');
+let me = null, partner = null;
+
+const params = new URLSearchParams(location.search);
+if(TYPE_ORDER.includes(params.get('me'))) me = params.get('me');
+
+function pickGrid(role, selected){
+  return `<div class="pick-grid" role="group" aria-label="${role==='me' ? 'あなた' : '相手'}のタイプ">
+    ${TYPE_ORDER.map(k=>`
+      <button class="pick" data-role="${role}" data-k="${k}" aria-pressed="${k===selected}">
+        ${ICONS[k]}<span>${ANIMALS[k].name}</span>
+      </button>`).join('')}
+  </div>`;
+}
+
+function renderStart(){
+  card.innerHTML = `
+    <div class="eyebrow">Love Animal Compatibility</div>
+    <h1 class="title">恋愛動物<em>相性診断</em></h1>
+    <p class="lede">あなたと相手の恋愛動物タイプを選ぶだけ。<br>ふたりの相性と、うまくいくヒントがわかります。</p>
+    <div class="pick-label">あなたのタイプ</div>
+    ${pickGrid('me', me)}
+    <div class="pick-label">相手のタイプ</div>
+    ${pickGrid('partner', partner)}
+    <button class="primary" id="goBtn" ${me && partner ? '' : 'disabled'}>ふたりの相性を見る</button>
+    <p class="to-shindan">タイプがわからない方は<br><a href="../">恋愛動物タイプ診断（全7問・約1分）</a>から</p>
+  `;
+  card.querySelectorAll('button.pick').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const role = btn.getAttribute('data-role'), k = btn.getAttribute('data-k');
+      if(role === 'me') me = k; else partner = k;
+      card.querySelectorAll(`button.pick[data-role="${role}"]`).forEach(b=>b.setAttribute('aria-pressed', String(b === btn)));
+      document.getElementById('goBtn').disabled = !(me && partner);
+    });
+  });
+  document.getElementById('goBtn').addEventListener('click', ()=>{
+    if(!(me && partner)) return;
+    renderResult();
+    window.scrollTo(0, 0);
+  });
+}
+
+function shareText(){
+  const p = PAIRS[pairKey(me, partner)];
+  return `【恋愛動物 相性診断】\n${ANIMALS[me].name}×${ANIMALS[partner].name}の相性は ${p.score}%💞\n「${p.title}」\n\nあなたとあの人の相性は？`;
+}
+
+function badge(k){
+  return `<div class="badge" style="background:radial-gradient(circle, ${ANIMALS[k].color}3d, transparent 70%); box-shadow:0 0 30px -8px ${ANIMALS[k].color}70;">${ICONS[k]}</div>`;
+}
+
+function renderResult(){
+  const p = PAIRS[pairKey(me, partner)];
+  track('compat_result', {me_type: me, partner_type: partner, score: p.score});
+  card.innerHTML = `
+    <div class="result-label">Compatibility</div>
+    <div class="pair">
+      <div class="who">${badge(me)}<span>あなた：${ANIMALS[me].name}</span></div>
+      <div class="heart" aria-hidden="true">♡</div>
+      <div class="who">${badge(partner)}<span>相手：${ANIMALS[partner].name}</span></div>
+    </div>
+    <div class="score">${p.score}<small>%</small></div>
+    <span class="rank">${rankLabel(p.score)}</span>
+    <h2 class="result-name" style="font-size:21px; line-height:1.6; word-break:keep-all; overflow-wrap:break-word;">${p.title}</h2>
+    <div class="result-desc" style="margin-top:10px;">${p.text}</div>
+    <div class="advice"><b>うまくいくヒント</b>${p.advice}</div>
+    ${renderRecs(me)}
+    <div class="result-actions">
+      <a class="primary" id="xShareBtn" href="https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText())}&url=${encodeURIComponent(SITE_URL)}" target="_blank" rel="noopener" style="display:block; text-align:center; text-decoration:none;">X でシェアする</a>
+      <button class="ghost" id="retryBtn" style="margin-top:2px;">ほかの組み合わせも見る</button>
+    </div>
+    <p class="to-shindan"><a href="../">自分のタイプをくわしく知る（恋愛動物タイプ診断）</a></p>
+  `;
+  card.querySelectorAll('.rec').forEach(el=>{
+    el.addEventListener('click', ()=>track('affiliate_click', {offer: el.getAttribute('data-offer'), love_type: me, page: 'aisho'}));
+  });
+  document.getElementById('xShareBtn').addEventListener('click', ()=>track('share', {method: 'x', love_type: me, page: 'aisho'}));
+  document.getElementById('retryBtn').addEventListener('click', ()=>{ partner = null; renderStart(); window.scrollTo(0, 0); });
+}
+
+function initStars(){
+  const holder = document.getElementById('stars');
+  for(let i=0;i<60;i++){
+    const s = document.createElement('span');
+    s.style.left = Math.random()*100 + 'vw';
+    s.style.top = Math.random()*100 + 'vh';
+    s.style.animationDelay = (Math.random()*4) + 's';
+    s.style.opacity = (0.2 + Math.random()*0.6).toFixed(2);
+    holder.appendChild(s);
+  }
+}
+
+initStars();
+renderStart();
+</script>
+</body>
+</html>
