@@ -160,7 +160,14 @@ A8.net、もしもアフィリエイト、バリューコマース、afb、Amazo
 - 計測イベント：`compat_result`（`me_type`・`partner_type`・`score`）、`go_aisho`（1本目から相性診断へ移動）
 - 毎週火曜 19:52 に「GA週次チェック」のお知らせがこの会話に届く設定にした
 
+### 広報部・SEO（2026-10-11）
+- X：相性診断の紹介投稿を、固定の投稿へのリプライとしてつなげて投稿した
+- **投稿ルール（X）：URL は投稿のいちばん最後に置く。最後にあると X が URL の文字を隠して画像カードだけ表示するので、見た目がきれいになる**
+- 2つのページに検索結果用の説明文（meta description）と canonical を追加し、`sitemap.xml` を作った
+- 相性診断の Pinterest 用画像 `pins/pin-aisho.png` と文章（`pins/pin-texts.md` の 7）を作った
+
 ### 次にやること
+0. Google Search Console にサイトを登録して、`sitemap.xml` を送る（オーナーの Google アカウントで）
 1. Pinterest に残り2枚（うさぎ・梟）を1日1〜2枚ずつ投稿する（文章は `pins/pin-texts.md`）。相性診断のピンも作る
 2. X で相性診断を紹介する投稿をする（文章は Claude が作る）
 3. バチェラーデートの審査に通ったら、広告リンクをサイトの `OFFERS.matching` に入れる（白鳥・梟タイプに表示）
