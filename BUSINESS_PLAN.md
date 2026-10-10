@@ -166,8 +166,10 @@ A8.net、もしもアフィリエイト、バリューコマース、afb、Amazo
 - 2つのページに検索結果用の説明文（meta description）と canonical を追加し、`sitemap.xml` を作った
 - 相性診断の Pinterest 用画像 `pins/pin-aisho.png` と文章（`pins/pin-texts.md` の 7）を作った
 
+- Google Search Console に URL プレフィックス `https://chi330-lab.github.io/love-animal-shindan/` で登録（GA と同じアカウントで自動確認）。`sitemap.xml` を送信（直後は「取得できませんでした」→ 数日で変わるか週次チェックで確認）
+- URL 検査：1本目は未登録だったので「インデックス登録をリクエスト」済み。相性診断はすでに Google に登録済みだった
+
 ### 次にやること
-0. Google Search Console にサイトを登録して、`sitemap.xml` を送る（オーナーの Google アカウントで）
 1. Pinterest に残り2枚（うさぎ・梟）を1日1〜2枚ずつ投稿する（文章は `pins/pin-texts.md`）。相性診断のピンも作る
 2. X で相性診断を紹介する投稿をする（文章は Claude が作る）
 3. バチェラーデートの審査に通ったら、広告リンクをサイトの `OFFERS.matching` に入れる（白鳥・梟タイプに表示）
