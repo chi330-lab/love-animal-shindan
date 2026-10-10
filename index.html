@@ -512,15 +512,17 @@ const OFFERS = {
     url:""
   }
 };
-/* タイプごとに表示するおすすめ（上から順に表示） */
+/* タイプごとに表示するおすすめ（上から順に表示。url が空のものは飛ばす） */
 const TYPE_OFFERS = {
   cat:["uranai","book"],
   dog:["uranai","counseling"],
-  swan:["matching","book"],
+  swan:["matching","book","uranai"],
   fox:["uranai","matching"],
   rabbit:["counseling","uranai"],
-  owl:["matching","book"]
+  owl:["matching","book","uranai"]
 };
+/* 1つの結果画面に出すおすすめの最大数（url が入っているものを上から順に） */
+const MAX_RECS = 2;
 const RECS_LEDE = {
   cat:"距離をとりたくなる本当の理由を、誰かと一緒にのぞいてみませんか。",
   dog:"不安な夜を、ひとりで過ごさなくていいように。",
@@ -531,7 +533,7 @@ const RECS_LEDE = {
 };
 
 function renderRecs(key){
-  const items = (TYPE_OFFERS[key]||[]).map(id=>OFFERS[id]).filter(o=>o && o.url);
+  const items = (TYPE_OFFERS[key]||[]).map(id=>OFFERS[id]).filter(o=>o && o.url).slice(0, MAX_RECS);
   if(!items.length) return '';
   return `
     <div class="recs">
