@@ -483,14 +483,16 @@ const QUESTIONS = [
 
 /* ---------------- おすすめ（アフィリエイト）設定 ----------------
    ASP（A8.net / もしもアフィリエイト / Amazonアソシエイト 等）で取得した
-   広告リンクを url に貼り付けてください。url が空の項目は表示されません。
+   広告リンクを url に、計測用の画像URL（0.gif）があれば pixel に貼り付けてください。
+   url が空の項目は表示されません。
    ※ 表示文言は、提携先の広告規約・表現ルールに合わせて調整してください。 */
 const OFFERS = {
   uranai: {
-    title:"恋愛に強い電話占い",
-    text:"ひとりで抱えている恋の悩みを、プロの占い師に話してみる。",
+    title:"電話占い【ココナラ】",
+    text:"ひとりで抱えている恋の悩みを、プロの占い師に話してみる。新規会員登録で3,000円分の無料クーポンプレゼント中。",
     cta:"占い師を見てみる",
-    url:""
+    url:"https://px.a8.net/svt/ejp?a8mat=45G0HT+2W6WEY+2PEO+C3BAQ",
+    pixel:"https://www18.a8.net/0.gif?a8mat=45G0HT+2W6WEY+2PEO+C3BAQ"
   },
   matching: {
     title:"価値観で探せるマッチングアプリ",
@@ -542,6 +544,7 @@ function renderRecs(key){
           <div class="rec-text">${o.text}</div>
           <span class="rec-cta">${o.cta} &rarr;</span>
         </a>
+        ${o.pixel ? `<img src="${o.pixel}" width="1" height="1" alt="" style="position:absolute; width:1px; height:1px; border:0;">` : ''}
       `).join('')}
       <p class="recs-note">※ 上記は広告（アフィリエイトリンク）です。<br>リンク先で購入・登録されると当サイトに報酬が支払われる場合があります。</p>
     </div>
