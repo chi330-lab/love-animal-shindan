@@ -270,13 +270,14 @@ const RECS_LEDE = {
   owl:"じっくり相手を知ってから始まる恋を、あなたのペースで。"
 };
 
-function renderRecs(key){
+/* lede を渡すと、タイプ別の一言のかわりにそれを表示する */
+function renderRecs(key, lede){
   const items = (TYPE_OFFERS[key]||[]).filter(id=>OFFERS[id] && OFFERS[id].url).slice(0, MAX_RECS).map(id=>({id, ...OFFERS[id]}));
   if(!items.length) return '';
   return `
     <div class="recs">
       <div class="recs-head">FOR YOU</div>
-      <p class="recs-lede">${RECS_LEDE[key]||''}</p>
+      <p class="recs-lede">${lede || RECS_LEDE[key] || ''}</p>
       ${items.map(o=>`
         <a class="rec" href="${o.url}" target="_blank" rel="sponsored noopener" data-offer="${o.id}">
           <div class="rec-top"><span class="rec-pr">PR</span><span class="rec-title">${o.title}</span></div>
