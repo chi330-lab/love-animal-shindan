@@ -15,6 +15,15 @@
 <meta name="twitter:title" content="あなたの恋愛動物タイプ診断">
 <meta name="twitter:description" content="7つの質問に直感で答えるだけで、あなたの愛し方・安心できる恋がわかります。">
 <meta name="twitter:image" content="https://chi330-lab.github.io/love-animal-shindan/og-image.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JJYOKPQSFB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JJYOKPQSFB');
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -199,7 +208,7 @@
 
 <div class="app">
   <div class="card" id="card"></div>
-  <footer class="credit">恋愛動物タイプ診断 &mdash; 愛し方を映す六つの獣<br>当サイトはアフィリエイトプログラムによる広告（PR）を掲載しています。</footer>
+  <footer class="credit">恋愛動物タイプ診断 &mdash; 愛し方を映す六つの獣<br>当サイトはアフィリエイトプログラムによる広告（PR）を掲載しています。<br>アクセス解析のため Google アナリティクス（Cookie）を使用しています。個人を特定する情報は収集していません。</footer>
 </div>
 
 <script>
@@ -533,14 +542,14 @@ const RECS_LEDE = {
 };
 
 function renderRecs(key){
-  const items = (TYPE_OFFERS[key]||[]).map(id=>OFFERS[id]).filter(o=>o && o.url).slice(0, MAX_RECS);
+  const items = (TYPE_OFFERS[key]||[]).filter(id=>OFFERS[id] && OFFERS[id].url).slice(0, MAX_RECS).map(id=>({id, ...OFFERS[id]}));
   if(!items.length) return '';
   return `
     <div class="recs">
       <div class="recs-head">FOR YOU</div>
       <p class="recs-lede">${RECS_LEDE[key]||''}</p>
       ${items.map(o=>`
-        <a class="rec" href="${o.url}" target="_blank" rel="sponsored noopener">
+        <a class="rec" href="${o.url}" target="_blank" rel="sponsored noopener" data-offer="${o.id}">
           <div class="rec-top"><span class="rec-pr">PR</span><span class="rec-title">${o.title}</span></div>
           <div class="rec-text">${o.text}</div>
           <span class="rec-cta">${o.cta} &rarr;</span>
@@ -550,6 +559,11 @@ function renderRecs(key){
       <p class="recs-note">※ 上記は広告（アフィリエイトリンク）です。<br>リンク先で購入・登録されると当サイトに報酬が支払われる場合があります。</p>
     </div>
   `;
+}
+
+/* ---------------- アクセス解析（Google アナリティクス） ---------------- */
+function track(name, params){
+  try{ if(typeof gtag === 'function') gtag('event', name, params || {}); }catch(e){}
 }
 
 /* ---------------- state ---------------- */
@@ -587,6 +601,7 @@ function renderStart(){
   document.getElementById('startBtn').addEventListener('click', ()=>{
     step = 0;
     scores = {cat:0, dog:0, swan:0, fox:0, rabbit:0, owl:0};
+    track('quiz_start');
     renderQuestion();
   });
 }
@@ -619,6 +634,7 @@ function renderQuestion(){
       step += 1;
       if(step >= QUESTIONS.length){
         computeResult();
+        track('quiz_complete', {love_type: resultKey});
         renderResult();
       } else {
         renderQuestion();
@@ -668,7 +684,13 @@ function renderResult(){
     <div class="copy-msg" id="copyMsg"></div>
   `;
 
+  card.querySelectorAll('.rec').forEach(el=>{
+    el.addEventListener('click', ()=>track('affiliate_click', {offer: el.getAttribute('data-offer'), love_type: resultKey}));
+  });
+  document.getElementById('xShareBtn').addEventListener('click', ()=>track('share', {method: 'x', love_type: resultKey}));
+
   document.getElementById('copyBtn').addEventListener('click', async ()=>{
+    track('share', {method: 'copy', love_type: resultKey});
     const msg = document.getElementById('copyMsg');
     try{
       await navigator.clipboard.writeText(shareText());
