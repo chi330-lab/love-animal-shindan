@@ -111,7 +111,7 @@
   .mini svg{width:58px; height:58px;}
   .mini span{font-size:10.5px; color:var(--muted); letter-spacing:.02em;}
 
-  button.primary{
+  button.primary, a.primary{
     appearance:none; border:none; cursor:pointer; width:100%; padding:16px;
     border-radius:999px; font-family:'Zen Kaku Gothic New', sans-serif;
     font-weight:700; font-size:15px; letter-spacing:.05em; color:#241a22;
@@ -119,9 +119,9 @@
     box-shadow:0 12px 24px -10px rgba(217,162,160,0.55);
     transition:transform .15s ease, box-shadow .15s ease;
   }
-  button.primary:hover{transform:translateY(-2px); box-shadow:0 16px 28px -10px rgba(217,162,160,0.7);}
+  button.primary:hover, a.primary:hover{transform:translateY(-2px); box-shadow:0 16px 28px -10px rgba(217,162,160,0.7);}
   button.primary:active{transform:translateY(0);}
-  button.primary:focus-visible, button.opt:focus-visible, button.ghost:focus-visible{
+  button.primary:focus-visible, a.primary:focus-visible, button.opt:focus-visible, button.ghost:focus-visible{
     outline:2px solid var(--gold-soft); outline-offset:3px;
   }
   .fine{margin-top:14px; text-align:center; font-size:11px; color:var(--muted); opacity:.8;}
@@ -172,6 +172,26 @@
   .copy-msg{text-align:center; font-size:11.5px; color:var(--gold-soft); height:16px; margin-top:6px;}
 
   footer.credit{text-align:center; margin-top:18px; font-size:10.5px; color:var(--muted); opacity:.6;}
+  footer.credit a{color:inherit;}
+
+  /* ---- おすすめ（アフィリエイト） ---- */
+  .recs{margin:4px 0 24px; padding-top:20px; border-top:1px solid var(--line);}
+  .recs-head{text-align:center; font-size:11.5px; letter-spacing:.24em; color:var(--gold); margin-bottom:6px;}
+  .recs-lede{text-align:center; font-size:12.5px; line-height:1.8; color:var(--muted); margin:0 auto 14px; max-width:320px; word-break:keep-all; overflow-wrap:break-word;}
+  .rec{
+    display:block; text-decoration:none; color:var(--cream);
+    border:1px solid var(--line); border-radius:16px; padding:14px 16px; margin-bottom:10px;
+    background:rgba(255,255,255,0.03);
+    transition:background .15s ease, border-color .15s ease, transform .1s ease;
+  }
+  .rec:hover{background:rgba(217,162,160,0.08); border-color:var(--gold); transform:translateY(-1px);}
+  .rec:focus-visible{outline:2px solid var(--gold-soft); outline-offset:3px;}
+  .rec-top{display:flex; align-items:center; gap:8px; margin-bottom:4px;}
+  .rec-pr{font-size:9.5px; letter-spacing:.08em; padding:2px 6px; border-radius:4px; border:1px solid var(--muted); color:var(--muted);}
+  .rec-title{font-weight:700; font-size:14px;}
+  .rec-text{font-size:12.5px; line-height:1.7; color:var(--muted);}
+  .rec-cta{display:block; margin-top:8px; font-size:12px; color:var(--gold-soft);}
+  .recs-note{text-align:center; font-size:10.5px; color:var(--muted); opacity:.75; line-height:1.7;}
 </style>
 </head>
 <body>
@@ -180,7 +200,7 @@
 
 <div class="app">
   <div class="card" id="card"></div>
-  <footer class="credit">恋愛動物タイプ診断 &mdash; 愛し方を映す六つの獣</footer>
+  <footer class="credit">恋愛動物タイプ診断 &mdash; 愛し方を映す六つの獣<br>当サイトはアフィリエイトプログラムによる広告（PR）を掲載しています。</footer>
 </div>
 
 <script>
@@ -461,6 +481,73 @@ const QUESTIONS = [
   ]}
 ];
 
+/* ---------------- おすすめ（アフィリエイト）設定 ----------------
+   ASP（A8.net / もしもアフィリエイト / Amazonアソシエイト 等）で取得した
+   広告リンクを url に貼り付けてください。url が空の項目は表示されません。
+   ※ 表示文言は、提携先の広告規約・表現ルールに合わせて調整してください。 */
+const OFFERS = {
+  uranai: {
+    title:"恋愛に強い電話占い",
+    text:"ひとりで抱えている恋の悩みを、プロの占い師に話してみる。",
+    cta:"占い師を見てみる",
+    url:""
+  },
+  matching: {
+    title:"価値観で探せるマッチングアプリ",
+    text:"性格や価値観の診断から、相性のいい相手を探せる。（18歳以上・独身の方向け）",
+    cta:"アプリをチェックする",
+    url:""
+  },
+  counseling: {
+    title:"オンラインの恋愛・心理カウンセリング",
+    text:"不安になりやすいクセを、専門家と一緒にほどいていく。",
+    cta:"カウンセラーを探す",
+    url:""
+  },
+  book: {
+    title:"愛着スタイルを知る本",
+    text:"\"なぜいつも同じ恋をしてしまうのか\"を、心理学からやさしく解説。",
+    cta:"本を見てみる",
+    url:""
+  }
+};
+/* タイプごとに表示するおすすめ（上から順に表示） */
+const TYPE_OFFERS = {
+  cat:["uranai","book"],
+  dog:["uranai","counseling"],
+  swan:["matching","book"],
+  fox:["uranai","matching"],
+  rabbit:["counseling","uranai"],
+  owl:["matching","book"]
+};
+const RECS_LEDE = {
+  cat:"距離をとりたくなる本当の理由を、誰かと一緒にのぞいてみませんか。",
+  dog:"不安な夜を、ひとりで過ごさなくていいように。",
+  swan:"あなたの穏やかさを分かってくれる人と、出会うために。",
+  fox:"隠している本音を、たまには安心して話せる場所を。",
+  rabbit:"\"つながりが切れる不安\"との付き合い方を見つけるために。",
+  owl:"じっくり相手を知ってから始まる恋を、あなたのペースで。"
+};
+
+function renderRecs(key){
+  const items = (TYPE_OFFERS[key]||[]).map(id=>OFFERS[id]).filter(o=>o && o.url);
+  if(!items.length) return '';
+  return `
+    <div class="recs">
+      <div class="recs-head">FOR YOU</div>
+      <p class="recs-lede">${RECS_LEDE[key]||''}</p>
+      ${items.map(o=>`
+        <a class="rec" href="${o.url}" target="_blank" rel="sponsored noopener">
+          <div class="rec-top"><span class="rec-pr">PR</span><span class="rec-title">${o.title}</span></div>
+          <div class="rec-text">${o.text}</div>
+          <span class="rec-cta">${o.cta} &rarr;</span>
+        </a>
+      `).join('')}
+      <p class="recs-note">※ 上記は広告（アフィリエイトリンク）です。<br>リンク先で購入・登録されると当サイトに報酬が支払われる場合があります。</p>
+    </div>
+  `;
+}
+
 /* ---------------- state ---------------- */
 let step = -1;
 let scores = {cat:0, dog:0, swan:0, fox:0, rabbit:0, owl:0};
@@ -547,6 +634,8 @@ function computeResult(){
   resultKey = best;
 }
 
+const SITE_URL = "https://chi330-lab.github.io/love-animal-shindan/";
+
 function shareText(){
   const a = ANIMALS[resultKey];
   return `【恋愛動物タイプ診断】\n私は「${a.name}」タイプでした🐾\n${a.catch}\n\nあなたの恋愛動物は？`;
@@ -566,7 +655,9 @@ function renderResult(){
     <div class="keywords">
       ${a.keywords.map(k=>`<span class="kw">${k}</span>`).join('')}
     </div>
+    ${renderRecs(resultKey)}
     <div class="result-actions">
+      <a class="primary" id="xShareBtn" href="https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText())}&url=${encodeURIComponent(SITE_URL)}" target="_blank" rel="noopener" style="display:block; text-align:center; text-decoration:none;">X でシェアする</a>
       <button class="primary" id="copyBtn" style="background:linear-gradient(135deg, ${a.color}, var(--gold));">シェア用テキストをコピー</button>
       <button class="ghost" id="retryBtn" style="margin-top:2px;">もう一度診断する</button>
     </div>
