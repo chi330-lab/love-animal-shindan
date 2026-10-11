@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>50代からの なりたいキレイ診断 | 理想の私に、今日から一歩ずつ</title>
+<meta name="description" content="7つの質問に答えるだけの無料診断。50代からの「なりたいキレイ」のタイプと、お金をかけずに今日からできる小さな一歩がわかります。">
+<link rel="canonical" href="https://chi330-lab.github.io/love-animal-shindan/kirei/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="50代からの なりたいキレイ診断">
+<meta property="og:description" content="7つの質問に答えるだけで、あなたの「なりたいキレイ」のタイプと、今日からできる小さな一歩がわかります。">
+<meta property="og:url" content="https://chi330-lab.github.io/love-animal-shindan/kirei/">
+<meta property="og:image" content="https://chi330-lab.github.io/love-animal-shindan/kirei/og-kirei.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="50代からの なりたいキレイ診断">
+<meta name="twitter:description" content="7つの質問に答えるだけで、あなたの「なりたいキレイ」のタイプと、今日からできる小さな一歩がわかります。">
+<meta name="twitter:image" content="https://chi330-lab.github.io/love-animal-shindan/kirei/og-kirei.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JJY0KPQSFB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JJY0KPQSFB');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#faf5ef;
+    --bg-2:#f3e9e1;
+    --card:#fffdfa;
+    --ink:#4a3a35;
+    --muted:#8c7a72;
+    --rose:#c98b8b;
+    --rose-soft:#e8c3bd;
+    --gold:#b8956a;
+    --line:rgba(184,149,106,0.28);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:'Zen Kaku Gothic New', sans-serif;
+    background:
+      radial-gradient(ellipse at 10% 0%, rgba(232,195,189,0.45), transparent 55%),
+      radial-gradient(ellipse at 90% 100%, rgba(184,149,106,0.18), transparent 55%),
+      linear-gradient(180deg, var(--bg), var(--bg-2));
+    color:var(--ink);
+    min-height:100vh;
+    display:flex; justify-content:center;
+    padding:32px 16px;
+  }
+  .app{width:100%; max-width:460px; margin:auto 0;}
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:24px;
+    padding:36px 26px;
+    box-shadow:0 24px 50px -24px rgba(120,80,60,0.35);
+    min-height:420px;
+    display:flex; flex-direction:column;
+  }
+  .eyebrow{font-size:11.5px; letter-spacing:.3em; color:var(--gold); text-align:center; text-transform:uppercase;}
+  h1.title{font-family:'Shippori Mincho', serif; font-weight:800; font-size:28px; line-height:1.55; text-align:center; margin:14px 0 10px;}
+  h1.title em{font-style:normal; color:var(--rose);}
+  .lede{text-align:center; font-size:13.5px; line-height:2; color:var(--muted); margin:0 auto 22px; max-width:340px; word-break:keep-all; overflow-wrap:break-word;}
+  .lede strong{color:var(--ink); font-weight:500;}
+  .chips{display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-bottom:26px;}
+  .chip{font-size:11.5px; padding:6px 12px; border-radius:999px; border:1px solid var(--line); color:var(--muted); background:#fff;}
+  button.primary{
+    appearance:none; border:none; cursor:pointer; width:100%; padding:16px;
+    border-radius:999px; font-family:inherit; font-weight:700; font-size:15px; letter-spacing:.05em;
+    color:#fff; background:linear-gradient(135deg, var(--rose), var(--gold));
+    box-shadow:0 12px 22px -12px rgba(201,139,139,0.8);
+    transition:transform .15s ease;
+  }
+  button.primary:hover{transform:translateY(-2px);}
+  button.primary:focus-visible, button.opt:focus-visible, button.ghost:focus-visible, a:focus-visible{outline:2px solid var(--rose); outline-offset:3px;}
+  .fine{margin-top:14px; text-align:center; font-size:11px; color:var(--muted);}
+
+  .progress{display:flex; justify-content:center; gap:8px; margin-bottom:22px;}
+  .dot{width:7px; height:7px; border-radius:50%; background:var(--rose-soft); opacity:.5;}
+  .dot.done{background:var(--rose); opacity:1;}
+  .dot.active{background:var(--gold); opacity:1; box-shadow:0 0 0 4px rgba(184,149,106,0.18);}
+  .q-index{text-align:center; font-size:11.5px; letter-spacing:.28em; color:var(--gold); margin-bottom:10px;}
+  .q-text{font-family:'Shippori Mincho', serif; font-size:20px; line-height:1.7; text-align:center; margin-bottom:22px; min-height:68px; display:flex; align-items:center; justify-content:center;}
+  .options{display:flex; flex-direction:column; gap:10px;}
+  button.opt{
+    appearance:none; cursor:pointer; text-align:left; font-family:inherit; color:var(--ink);
+    border:1px solid var(--line); background:#fff; border-radius:14px; padding:14px 16px; font-size:13.5px; line-height:1.6;
+    transition:background .15s ease, border-color .15s ease;
+  }
+  button.opt:hover{background:#fbf1ee; border-color:var(--rose);}
+  .back-link{margin-top:18px; text-align:center;}
+  button.ghost{appearance:none; border:none; background:none; cursor:pointer; color:var(--muted); font-family:inherit; font-size:12px; text-decoration:underline; text-underline-offset:3px;}
+
+  .r-mark{width:120px; height:120px; margin:4px auto 16px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:54px;}
+  .r-label{text-align:center; font-size:11px; letter-spacing:.3em; color:var(--muted); margin-bottom:6px;}
+  h2.r-name{font-family:'Shippori Mincho', serif; font-weight:800; font-size:26px; text-align:center; margin-bottom:8px;}
+  .r-catch{text-align:center; font-size:13.5px; color:var(--rose); margin:0 auto 16px; max-width:330px; line-height:1.8; word-break:keep-all; overflow-wrap:break-word;}
+  .r-desc{font-size:14px; line-height:2; text-align:center; margin:0 auto 22px; max-width:340px; word-break:keep-all; overflow-wrap:break-word;}
+  .box{border-radius:16px; padding:16px 18px; margin-bottom:22px; background:#fbf6f0; border:1px solid var(--line);}
+  .box h3{font-size:12px; letter-spacing:.2em; color:var(--gold); text-align:center; font-weight:500; margin-bottom:10px;}
+  .steps{list-style:none; counter-reset:s;}
+  .steps li{counter-increment:s; position:relative; padding:8px 0 8px 34px; font-size:13.5px; line-height:1.7; border-top:1px dashed var(--line); word-break:keep-all; overflow-wrap:break-word;}
+  .steps li:first-child{border-top:none;}
+  .steps li::before{content:counter(s); position:absolute; left:0; top:9px; width:22px; height:22px; border-radius:50%; background:var(--rose-soft); color:#fff; font-size:12px; display:flex; align-items:center; justify-content:center; font-weight:700;}
+  .items-lede{text-align:center; font-size:12.5px; color:var(--muted); line-height:1.8; margin-bottom:12px;}
+  a.item{display:block; text-decoration:none; color:var(--ink); background:#fff; border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin-bottom:10px;}
+  a.item:hover{border-color:var(--rose);}
+  .item-top{display:flex; align-items:center; gap:8px; margin-bottom:4px;}
+  .pr{font-size:9.5px; padding:2px 6px; border-radius:4px; border:1px solid var(--muted); color:var(--muted);}
+  .item-title{font-weight:700; font-size:14px;}
+  .item-text{font-size:12.5px; line-height:1.7; color:var(--muted);}
+  .item-cta{display:block; margin-top:6px; font-size:12px; color:var(--rose);}
+  .note{text-align:center; font-size:10.5px; color:var(--muted); line-height:1.7;}
+  .actions{display:flex; flex-direction:column; gap:10px; margin-top:4px;}
+  a.share{display:block; text-align:center; text-decoration:none; padding:15px; border-radius:999px; font-weight:700; font-size:14.5px; color:#fff; background:linear-gradient(135deg, var(--rose), var(--gold));}
+  footer.credit{text-align:center; margin-top:18px; font-size:10.5px; color:var(--muted); line-height:1.8;}
+</style>
+</head>
+<body>
+
+<div class="app">
+  <div class="card" id="card"></div>
+  <footer class="credit">50代からの なりたいキレイ診断<br>当サイトはアフィリエイトプログラム（楽天アフィリエイトなど）による広告（PR）を掲載しています。<br>ご紹介する商品の使い心地には個人差があり、効果・効能を保証するものではありません。<br>アクセス解析のため Google アナリティクス（Cookie）を使用しています。個人を特定する情報は収集していません。</footer>
+</div>
+
+<script>
+function track(name, params){
+  try{ if(typeof gtag === 'function') gtag('event', name, params || {}); }catch(e){}
+}
+
+/* ---------------- タイプ ---------------- */
+const TYPES = {
+  elegant:{name:"上品エレガント", mark:"👑", color:"#d8c3a5",
+    catch:"「いつも品があるね」と言われる、ていねいな美しさ",
+    desc:"高いものをたくさん持つことより、ひとつひとつをていねいに扱うことで、品のある雰囲気がにじみ出る人。髪のツヤや手元など、小さなところを整えるほど、あなたらしさが輝きます。",
+    steps:["寝る前に、髪の毛先をていねいにとかす","朝ごはんを、お気に入りのお皿にのせてみる","鏡の前で背筋を伸ばして、深呼吸をひとつ"]},
+  natural:{name:"ナチュラル癒し", mark:"🌿", color:"#c5d6bf",
+    catch:"そばにいるだけでほっとする、自然体のキレイ",
+    desc:"飾りすぎない、やわらかな雰囲気が魅力の人。がんばって整えるより「心地いい」を大切にするほど、表情まで明るくなっていきます。",
+    steps:["朝、窓を開けて、ゆっくり3回深呼吸","小さな植物をひとつ、目に入る場所に置く","お風呂上がりに、好きな香りで5分ひと休み"]},
+  feminine:{name:"華やかフェミニン", mark:"🌸", color:"#efc6cc",
+    catch:"好きな色と花で、気分から明るくなるキレイ",
+    desc:"かわいいものや華やかなものに、素直にときめける人。年齢を理由にあきらめず、好きな色を少し取り入れるだけで、顔色も気持ちもぱっと明るくなります。",
+    steps:["小さな花を一輪、テーブルに飾る","いつもより少し明るい色を、ひとつ身につける","好きな音楽をかけながら、身じたくをする"]},
+  classic:{name:"知的クラシック", mark:"📖", color:"#cdb8a8",
+    catch:"落ち着いた知性がにじむ、大人のキレイ",
+    desc:"本や紅茶の時間を大切にする、穏やかで知的な人。姿勢や手元を整えるほど、落ち着いた上品さが引き立ちます。",
+    steps:["寝る前に、手をていねいにいたわる","本を読むときは、背筋を伸ばして座ってみる","お茶をいれて、ゆっくり味わう時間をつくる"]},
+  cozy:{name:"ほっこりぬくもり", mark:"☕", color:"#e3cdb4",
+    catch:"まわりをやさしく包む、あたたかいキレイ",
+    desc:"家族や身近な人を大切にする、あたたかい人。人のことを優先しがちだからこそ、1日5分でも自分をいたわる時間を持つと、やさしい表情がもっと輝きます。",
+    steps:["1日5分、自分だけのお茶の時間をつくる","肌ざわりのいい服に着替えて、ひと息つく","寝る前に、温かい飲みもので体をゆるめる"]},
+  cool:{name:"凛としたモダン", mark:"🤍", color:"#d6d3cf",
+    catch:"シンプルで、すっと背筋の伸びたキレイ",
+    desc:"余計なものをそぎ落とした、洗練された雰囲気の人。持ちものや部屋をすっきり整えるほど、心にも余裕が生まれて、凛とした美しさが引き立ちます。",
+    steps:["引き出しをひとつだけ、片づけてみる","毎日使うものを、気に入ったひとつに絞る","白湯を一杯飲んで、一日を始める"]}
+};
+const TYPE_ORDER = ["elegant","natural","feminine","classic","cozy","cool"];
+
+/* ---------------- 楽天のおすすめ商品 ----------------
+   楽天アフィリエイトで作った商品リンクを url に貼ってください。url が空のものは表示されません。
+   ※ 薬機法のため、「シワが消える」「若返る」などの効果をうたう言葉は書かないこと。
+     使い心地や雰囲気（香り・手ざわり・気分）を伝える書き方にする。 */
+const PRODUCTS = {
+  elegant:[
+    {title:"", text:"", url:""},
+    {title:"", text:"", url:""}
+  ],
+  natural:[
+    {title:"", text:"", url:""},
+    {title:"", text:"", url:""}
+  ],
+  feminine:[
+    {title:"", text:"", url:""},
+    {title:"", text:"", url:""}
+  ],
+  classic:[
+    {title:"", text:"", url:""},
+    {title:"", text:"", url:""}
+  ],
+  cozy:[
+    {title:"", text:"", url:""},
+    {title:"", text:"", url:""}
+  ],
+  cool:[
+    {title:"", text:"", url:""},
+    {title:"", text:"", url:""}
+  ]
+};
+
+/* ---------------- 質問 ---------------- */
+const QUESTIONS = [
+  {q:"理想の休日の朝は？", opts:[
+    {t:"ホテルの朝食のような、ていねいな朝ごはん", a:"elegant"},
+    {t:"窓を開けて、植物に水やり", a:"natural"},
+    {t:"花を飾って、好きな音楽をかける", a:"feminine"},
+    {t:"紅茶をいれて、読みかけの本を開く", a:"classic"},
+    {t:"パンを焼いて、家族とのんびり", a:"cozy"},
+    {t:"すっきり片づいた部屋で、白湯を一杯", a:"cool"}]},
+  {q:"憧れる髪型の雰囲気は？", opts:[
+    {t:"つやのある、きれいなまとめ髪", a:"elegant"},
+    {t:"ふんわり自然な、やわらかいウェーブ", a:"natural"},
+    {t:"華やかに巻いた、ゆるふわヘア", a:"feminine"},
+    {t:"きちんと整った、上品なボブ", a:"classic"},
+    {t:"ゆるく結んだ、ナチュラルなひとつ結び", a:"cozy"},
+    {t:"すっきり短めの、洗練されたショート", a:"cool"}]},
+  {q:"部屋に置きたいものは？", opts:[
+    {t:"ゴールドの縁の、すてきな鏡", a:"elegant"},
+    {t:"大きな観葉植物", a:"natural"},
+    {t:"ピンクのバラの花束", a:"feminine"},
+    {t:"アンティークの本棚", a:"classic"},
+    {t:"リネンのクッションとブランケット", a:"cozy"},
+    {t:"余計なもののない、白い棚", a:"cool"}]},
+  {q:"好きな香りは？", opts:[
+    {t:"上品なローズやジャスミン", a:"elegant"},
+    {t:"ハーブやユーカリ", a:"natural"},
+    {t:"甘いピオニーやスイートピー", a:"feminine"},
+    {t:"落ち着いたウッドや紅茶", a:"classic"},
+    {t:"ミルクやバニラのやさしい香り", a:"cozy"},
+    {t:"石けんやシトラスのすっきりした香り", a:"cool"}]},
+  {q:"まわりの人に言われたいひと言は？", opts:[
+    {t:"「いつも品があるね」", a:"elegant"},
+    {t:"「一緒にいると落ち着く」", a:"natural"},
+    {t:"「今日も華やかですてき」", a:"feminine"},
+    {t:"「話していて楽しい、物知りだね」", a:"classic"},
+    {t:"「あなたがいると、ほっとする」", a:"cozy"},
+    {t:"「いつもすっきりしていて、かっこいい」", a:"cool"}]},
+  {q:"いま、いちばん気になっていることは？", opts:[
+    {t:"髪のパサつきや、ツヤのなさ", a:"elegant"},
+    {t:"なんとなく、疲れて見えること", a:"natural"},
+    {t:"顔色が、ぱっとしないこと", a:"feminine"},
+    {t:"手元の乾燥や、姿勢", a:"classic"},
+    {t:"忙しくて、自分の時間がないこと", a:"cozy"},
+    {t:"部屋や持ちものが、ごちゃごちゃしていること", a:"cool"}]},
+  {q:"自分へのごほうびに選ぶなら？", opts:[
+    {t:"少しいいヘアオイル", a:"elegant"},
+    {t:"やさしい使い心地のボディケア", a:"natural"},
+    {t:"華やかな色のリップ", a:"feminine"},
+    {t:"上質なハンドクリーム", a:"classic"},
+    {t:"ふわふわのルームウェア", a:"cozy"},
+    {t:"シンプルで質のいい、定番アイテム", a:"cool"}]}
+];
+
+const SITE_URL = "https://chi330-lab.github.io/love-animal-shindan/kirei/";
+const card = document.getElementById('card');
+let step = -1, scores = {}, resultKey = null;
+
+function renderStart(){
+  card.innerHTML = `
+    <div class="eyebrow">6 Types / 7 Questions</div>
+    <h1 class="title">50代からの<br><em>なりたいキレイ</em>診断</h1>
+    <p class="lede">憧れの暮らしと、今の毎日。<br>ちょっと遠いと感じても大丈夫。<br>7つの質問で、<strong>あなたが本当になりたいキレイ</strong>と、<br>今日からできる小さな一歩がわかります。</p>
+    <div class="chips">${TYPE_ORDER.map(k=>`<span class="chip">${TYPES[k].mark} ${TYPES[k].name}</span>`).join('')}</div>
+    <button class="primary" id="startBtn">診断をはじめる</button>
+    <p class="fine">全7問・所要時間 約1分</p>
+  `;
+  document.getElementById('startBtn').addEventListener('click', ()=>{
+    step = 0; scores = Object.fromEntries(TYPE_ORDER.map(k=>[k,0]));
+    track('kirei_start');
+    renderQuestion();
+  });
+}
+
+function renderQuestion(){
+  const q = QUESTIONS[step];
+  const opts = [...q.opts].sort(()=>Math.random()-0.5);
+  card.innerHTML = `
+    <div class="progress">${QUESTIONS.map((_,i)=>`<span class="dot ${i<step?'done':i===step?'active':''}"></span>`).join('')}</div>
+    <div class="q-index">Question ${step+1} / ${QUESTIONS.length}</div>
+    <div class="q-text">${q.q}</div>
+    <div class="options">${opts.map(o=>`<button class="opt" data-a="${o.a}">${o.t}</button>`).join('')}</div>
+    ${step>0 ? '<div class="back-link"><button class="ghost" id="backBtn">ひとつ前の質問に戻る</button></div>' : ''}
+  `;
+  card.querySelectorAll('.opt').forEach(btn=>btn.addEventListener('click', ()=>{
+    scores[btn.getAttribute('data-a')] += 1;
+    step += 1;
+    if(step >= QUESTIONS.length){
+      resultKey = TYPE_ORDER.reduce((best,k)=>scores[k] > scores[best] ? k : best, TYPE_ORDER[0]);
+      track('kirei_complete', {kirei_type: resultKey});
+      renderResult();
+      window.scrollTo(0, 0);
+    } else {
+      renderQuestion();
+    }
+  }));
+  const back = document.getElementById('backBtn');
+  if(back) back.addEventListener('click', ()=>{ step -= 1; renderQuestion(); });
+}
+
+function shareText(){
+  const t = TYPES[resultKey];
+  return `【50代からの なりたいキレイ診断】\n私は「${t.name}」タイプでした${t.mark}\n${t.catch}\n\nあなたのなりたいキレイは？`;
+}
+
+function renderItems(key){
+  const items = (PRODUCTS[key]||[]).filter(p=>p.url);
+  if(!items.length) return '';
+  return `
+    <div class="box">
+      <h3>理想に近づくアイテム</h3>
+      <p class="items-lede">毎日のなかで、少しだけ気分が上がるものを。</p>
+      ${items.map(p=>`
+        <a class="item" href="${p.url}" target="_blank" rel="sponsored noopener">
+          <div class="item-top"><span class="pr">PR</span><span class="item-title">${p.title}</span></div>
+          ${p.text ? `<div class="item-text">${p.text}</div>` : ''}
+          <span class="item-cta">楽天で見てみる &rarr;</span>
+        </a>`).join('')}
+      <p class="note">※ 上記は広告（アフィリエイトリンク）です。<br>リンク先で購入されると当サイトに報酬が支払われる場合があります。</p>
+    </div>
+  `;
+}
+
+function renderResult(){
+  const t = TYPES[resultKey];
+  card.innerHTML = `
+    <div class="r-mark" style="background:radial-gradient(circle, ${t.color}, transparent 72%);">${t.mark}</div>
+    <div class="r-label">YOUR IDEAL BEAUTY</div>
+    <h2 class="r-name">${t.name}タイプ</h2>
+    <div class="r-catch">${t.catch}</div>
+    <div class="r-desc">${t.desc}</div>
+    <div class="box">
+      <h3>今日からできる、小さな一歩</h3>
+      <ol class="steps">${t.steps.map(s=>`<li>${s}</li>`).join('')}</ol>
+    </div>
+    ${renderItems(resultKey)}
+    <div class="actions">
+      <a class="share" id="xShareBtn" href="https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText())}&url=${encodeURIComponent(SITE_URL)}" target="_blank" rel="noopener">X でシェアする</a>
+      <button class="ghost" id="retryBtn">もう一度診断する</button>
+    </div>
+  `;
+  card.querySelectorAll('a.item').forEach(el=>el.addEventListener('click', ()=>track('affiliate_click', {offer:'rakuten', kirei_type: resultKey, page:'kirei'})));
+  document.getElementById('xShareBtn').addEventListener('click', ()=>track('share', {method:'x', kirei_type: resultKey, page:'kirei'}));
+  document.getElementById('retryBtn').addEventListener('click', ()=>{ step = -1; renderStart(); window.scrollTo(0, 0); });
+}
+
+renderStart();
+</script>
+</body>
+</html>
