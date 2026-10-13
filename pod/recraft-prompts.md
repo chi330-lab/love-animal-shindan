@@ -27,6 +27,7 @@
 - 描き方（浮世絵・ぼかし・和紙の質感）は昔からある様式なので使ってよい。動画の人の絵の構図（表紙の富士山と鶴など）はまねしない
 - 主役（鶴・鳥・鹿など）は大きく、**足の先まで切れずに** 描く（1月で足が切れたため、指示文に入れた）
 - 1月は2枚のうち、鶴が大きく迫力のあるほうをオーナーが選んだ
+- 2月以降の指示文には「no people」、6月以降は「no motion lines」（マンガのような動きの線が出たため）を足して使っている
 - 表紙は、最初の描き方で作った `00-cover.png` を使わず、**最後にこの描き方で作り直す**（13枚の雰囲気をそろえるため）
 
 ## 共通のスタイル（下の各月の指示文の最後に、もう入っています）
@@ -56,37 +57,39 @@ A bush warbler perched on a blossoming plum branch in the foreground, the whole 
 A large old cherry tree in full bloom in the foreground, soft clouds of pale pink and white blossoms, petals drifting gently in the breeze, more cherry trees along a calm river, wide spring fields leading to a distant blue mountain, peaceful and joyful spring, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the main subject large and fully visible, not cut off at the edges, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no curtain, no banner, no people, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
 ```
 
-### 4月　藤にホトトギス（Wisteria and cuckoo）
+### 4月　藤にホトトギス（Wisteria and cuckoo）✅ 完成（04-apr.png・藤の先が不自然に曲がっていないほうをオーナーが選んだ）
 ```
 Long clusters of purple wisteria hanging from the top of the picture, a lesser cuckoo flying across a pale crescent moon, a quiet pond and a wooden trellis below, peaceful late-spring evening, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the main subject large and fully visible, not cut off at the edges, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
 ```
 
-### 5月　菖蒲と八ツ橋（Iris and wooden bridge）
+### 5月　菖蒲と八ツ橋（Iris and wooden bridge）✅ 完成（05-may.png・花が華やかなほうをオーナーが選んだ）
 ```
 Tall purple irises in the foreground along a calm stream, a zigzag wooden plank bridge crossing the water, green fields and distant hills, fresh early-summer breeze, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the main subject large and fully visible, not cut off at the edges, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
 ```
 
-### 6月　牡丹に蝶（Peony and butterflies）
+### 6月　牡丹に蝶（Peony and butterflies）✅ 完成（06-jun.png・牡丹が大きく明るいほう）
 ```
 Large lush red and pink peony flowers in the foreground, two butterflies dancing above them, a quiet garden with a low bamboo fence and distant hills, graceful early summer, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the main subject large and fully visible, not cut off at the edges, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
 ```
 
-### 7月　萩に猪（Bush clover and wild boar）
+### 7月　萩に猪（Bush clover and wild boar）✅ 完成（07-jul.png・空と山の色がきれいなほうをオーナーが選んだ）
+- 「弓なりにしなる萩」と書くと、萩が輪っかのようになって気持ちが悪かった → 萩（ヤマハギ）を調べて、**株立ちの低い木・枝はまっすぐ斜め上・葉は3枚ずつ・枝先に小さな赤紫の花** と書き直した。「no arches, no rings, no loops」も入れた
+使った指示文：
 ```
-A wild boar walking through arching bush clover with tiny magenta flowers, the whole boar fully visible from snout to tail with its feet on the ground, a moonlit summer meadow and distant hills, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the main subject large and fully visible, not cut off at the edges, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
+A wild boar walking through a meadow of Japanese bush clover shrubs, each shrub a low multi-stemmed bush about waist high with many thin straight branches rising diagonally from the base, small rounded leaves in groups of three, and many tiny reddish-purple pea-like flowers clustered near the branch tips, the whole boar fully visible from snout to tail with its feet on the ground, a moonlit late-summer meadow and distant hills, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the main subject large and fully visible, not cut off at the edges, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no arches, no rings, no loops, no motion lines, no people, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
 ```
 
-### 8月　芒に満月（Pampas grass and full moon）
+### 8月　芒に満月（Pampas grass and full moon）✅ 完成（08-aug.png・満月が丸ごと見えるほう）
 ```
 A huge glowing full moon over a hill covered with silver pampas grass, a line of wild geese flying across the deep blue night sky, peaceful autumn moon viewing, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the main subject large and fully visible, not cut off at the edges, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
 ```
 
-### 9月　菊に盃（Chrysanthemum and sake cup）
+### 9月　菊に盃（Chrysanthemum and sake cup）✅ 完成（09-sep.png・山や松もある落ち着いたほう）
 ```
 Golden and white chrysanthemums in full bloom in the foreground, a red lacquered sake cup resting on a flat garden stone beside them, a quiet garden and distant hills, elegant autumn festival, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the main subject large and fully visible, not cut off at the edges, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
 ```
 
-### 10月　紅葉に鹿（Maple leaves and deer）
+### 10月　紅葉に鹿（Maple leaves and deer）✅ 選んだ（10-oct.png・鹿が大きいほうをオーナーが選んだ）
 ```
 A graceful deer fully visible from head to hooves, looking back under bright red and orange maple trees, falling maple leaves, a mountain stream and distant hills, crisp autumn day, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the main subject large and fully visible, not cut off at the edges, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
 ```

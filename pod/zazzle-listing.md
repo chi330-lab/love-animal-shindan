@@ -41,7 +41,7 @@ Each month features an original illustration inspired by the traditional Japanes
 
 January – Pine and crane
 February – Plum blossom and bush warbler
-March – Cherry blossoms
+March – Cherry blossoms by the river
 April – Wisteria and cuckoo
 May – Iris and wooden bridge
 June – Peony and butterflies
@@ -52,7 +52,7 @@ October – Maple leaves and deer
 November – Willow, swallow and rain
 December – Paulownia and phoenix
 
-Drawn in a calm, modern woodblock-print style with warm vermilion, indigo and gold tones, this calendar brings a quiet touch of Japan to your kitchen, office or entryway all year long.
+Drawn in the style of traditional Japanese ukiyo-e woodblock prints, with soft colors and gentle indigo skies, this calendar brings a quiet touch of Japan to your kitchen, office or entryway all year long.
 
 A thoughtful gift for friends and family who love Japanese art, nature and the changing seasons.
 
@@ -68,7 +68,7 @@ japanese art
 wall calendar
 seasonal flowers
 cherry blossom
-crane
+ukiyo-e
 woodblock print
 hanafuda inspired
 generative content
@@ -76,7 +76,7 @@ generative content
 
 予備（入れられる数が多いとき）：
 ```
-japan gift, nature calendar, japanese flowers, birds, asian art, new year gift, zen decor, moon, autumn leaves
+crane, japan gift, nature calendar, japanese flowers, birds, asian art, new year gift, zen decor, moon, autumn leaves
 ```
 
 ## そのほかの設定
