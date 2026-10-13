@@ -44,14 +44,16 @@ original illustration in the style of a traditional Japanese ukiyo-e woodblock p
 A large elegant red-crowned crane standing on a snowy shore, the whole crane fully visible from head to feet, feet clearly shown with snowy ground below them, crane placed slightly above the bottom edge, beneath an old twisted pine tree with snow on its branches, a big bright red rising sun over calm blue water and distant snowy hills, joyful New Year morning, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, fine delicate linework, warm soft colors with clear blue, crimson and pine green accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
 ```
 
-### 2月　梅に鶯（Plum blossom and bush warbler）
+### 2月　梅に鶯（Plum blossom and bush warbler）✅ 完成（02-feb.png・うぐいす色の鳥のほうを選んだ）
 ```
 A bush warbler perched on a blossoming plum branch in the foreground, the whole bird fully visible, soft pink and white plum blossoms, a quiet village and gentle hills in the distance under a pale late-winter sky, hopeful early spring, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the main subject large and fully visible, not cut off at the edges, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
 ```
 
-### 3月　桜（Cherry blossoms）
+### 3月　桜（Cherry blossoms）✅ 完成（03-mar.png）
+- 花見の幕（紅白の幕）を入れると、オーナーのイメージとちがった → **幕なし・桜だけ** にした。木が1本まるごと見えるほうを選んだ
+使った指示文：
 ```
-Large cherry trees in full bloom in the foreground, pink petals drifting in the wind, a red and white striped festival curtain hung between the trees, a riverside path and distant hills, joyful spring picnic season, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the main subject large and fully visible, not cut off at the edges, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
+A large old cherry tree in full bloom in the foreground, soft clouds of pale pink and white blossoms, petals drifting gently in the breeze, more cherry trees along a calm river, wide spring fields leading to a distant blue mountain, peaceful and joyful spring, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the main subject large and fully visible, not cut off at the edges, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no curtain, no banner, no people, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
 ```
 
 ### 4月　藤にホトトギス（Wisteria and cuckoo）
