@@ -21,7 +21,7 @@ Original artwork made with AI tools and finished by the designer. Find it on our
 
 | # | 画像 | タイトル（Title） | 説明（Description） | 代替テキスト（Alt text） |
 |---|---|---|---|---|
-| 0 | 00-cover | 2027 Japanese Seasonal Flowers Calendar | （表紙は作り直すので、できてから文章を作る） | （同上） |
+| 0 | 00-cover | 2027 Japanese Seasonal Flowers Calendar | Spring blossoms, summer irises, autumn maples and a snowy winter pine — the four seasons of Japan in one ukiyo-e style landscape. The cover of our 2027 calendar. | Panoramic Japanese landscape with cherry blossoms, wisteria, irises, red maples, pampas grass and a snowy pine under a red sun and full moon |
 | 1 | 01-jan | Pine and Crane – Japanese New Year Art | A crane under the pine and a red rising sun — a classic Japanese wish for a long, happy year. January of our 2027 calendar. | Red-crowned crane standing under a pine tree with a red sun behind |
 | 2 | 02-feb | Plum Blossom and Bush Warbler Art | Plum blossoms open while it is still cold, and the little warbler sings that spring is near. February of our 2027 calendar. | Small green bird on a plum branch with pink and white blossoms |
 | 3 | 03-mar | Japanese Cherry Blossoms Illustration | A great cherry tree in full bloom by a quiet river, with a blue mountain far away. Spring in the style of old Japanese woodblock prints. March of our 2027 calendar. | Large cherry tree in full bloom beside a river with a distant blue mountain |
@@ -32,8 +32,8 @@ Original artwork made with AI tools and finished by the designer. Find it on our
 | 8 | 08-aug | Full Moon and Pampas Grass – Moon Viewing Art | A huge moon over silver pampas grass — the Japanese tradition of autumn moon viewing. August of our 2027 calendar. | Large full moon over pampas grass with wild geese flying |
 | 9 | 09-sep | Chrysanthemum Japanese Autumn Art | Golden chrysanthemums and a red lacquered cup for the autumn festival. September of our 2027 calendar. | Golden and white chrysanthemums with a red sake cup |
 | 10 | 10-oct | Red Maple Leaves and Deer Japanese Art | A deer looks back under bright red maple trees as leaves fall. October of our 2027 calendar. | Deer under red and orange maple trees with falling leaves |
-| 11 | 11-nov | Willow, Swallow and Rain Japanese Art | A swallow flies through soft rain beside a willow tree. A quiet, calm November in our 2027 calendar. | Swallow flying in the rain beside a drooping willow tree |
-| 12 | 12-dec | Phoenix and Paulownia Japanese Art | A phoenix rises over paulownia flowers — a wish for good fortune at the end of the year. December of our 2027 calendar. | Colorful phoenix rising above purple paulownia flowers |
+| 11 | 11-nov | Mandarin Ducks in the Rain Japanese Art | A pair of mandarin ducks swims under a willow in soft late-autumn rain. In Japan, they are a symbol of a loving couple. November of our 2027 calendar. | Two mandarin ducks swimming on a river in the rain beneath a drooping willow tree |
+| 12 | 12-dec | Phoenix and Paulownia Japanese Art | A phoenix rises over paulownia flowers — a wish for good fortune at the end of the year. December of our 2027 calendar. | Colorful phoenix with a long rainbow tail flying above purple paulownia flowers and golden clouds |
 
 ## 投稿の順番（案）
 - 1日目：0（表紙）・1（1月）
