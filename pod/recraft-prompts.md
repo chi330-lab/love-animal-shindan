@@ -89,22 +89,26 @@ A huge glowing full moon over a hill covered with silver pampas grass, a line of
 Golden and white chrysanthemums in full bloom in the foreground, a red lacquered sake cup resting on a flat garden stone beside them, a quiet garden and distant hills, elegant autumn festival, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the main subject large and fully visible, not cut off at the edges, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
 ```
 
-### 10月　紅葉に鹿（Maple leaves and deer）✅ 選んだ（10-oct.png・鹿が大きいほうをオーナーが選んだ）
+### 10月　紅葉に鹿（Maple leaves and deer）✅ 完成（10-oct.png・鹿が大きいほうをオーナーが選んだ）
 ```
 A graceful deer fully visible from head to hooves, looking back under bright red and orange maple trees, falling maple leaves, a mountain stream and distant hills, crisp autumn day, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the main subject large and fully visible, not cut off at the edges, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
 ```
 
-### 11月　柳に燕と雨（Willow, swallow and rain）
+### 11月　柳におしどりと雨（Willow, mandarin ducks and rain）✅ 完成（11-nov.png）
+- 花札の11月は「柳に燕」だが、燕は秋に南へ帰るので、今の暦の11月にはほとんどいない（オーナーが気づいた）→ 冬に日本へ来る **おしどり** に変えた。2羽が小さめで落ち着いたほうをオーナーが選んだ
+使った指示文：
 ```
-A swallow flying through soft diagonal rain beside a large drooping willow tree by a river, a small wooden bridge in the distance, calm rainy day, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the main subject large and fully visible, not cut off at the edges, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
+A pair of colorful mandarin ducks swimming together on a calm river in soft late-autumn rain, both ducks fully visible, a large willow tree with long drooping branches and yellowing leaves beside the water, a small wooden bridge in the distance, quiet and gentle rainy day, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the main subject large and fully visible, not cut off at the edges, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no motion lines, no people, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
 ```
 
-### 12月　桐に鳳凰（Paulownia and phoenix）
+### 12月　桐に鳳凰（Paulownia and phoenix）✅ 完成（12-dec.png・頭の飾りと虹色のしっぽが鳳凰らしいほう。もう1枚は頭がワシのようだった）
+（使った指示文には「the whole phoenix fully visible from head to tail tips」と「no motion lines」も足した）
 ```
 A majestic phoenix with long flowing colorful tail feathers flying above purple paulownia flowers and large leaves, golden morning clouds, auspicious year-end celebration, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the main subject large and fully visible, not cut off at the edges, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
 ```
 
-### 表紙　四季の風景（あとで作る）
+### 表紙　四季の風景 ✅ 完成（00-cover.png・画面いっぱいに描かれたほう。最初の描き方の表紙は削除した）
+（使った指示文には「no motion lines」も足した）
 ```
 A panoramic Japanese landscape showing the four seasons from left to right: cherry blossoms and wisteria in spring, purple irises by a stream in summer, red maples and pampas grass under a full moon in autumn, a snowy pine in winter, a small red sun in the sky, harmonious and festive, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the main subject large and fully visible, not cut off at the edges, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, landscape scenery with a low horizon, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
 ```

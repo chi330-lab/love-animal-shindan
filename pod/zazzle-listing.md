@@ -37,7 +37,7 @@
 ```
 Welcome 2027 with twelve months of Japanese seasonal beauty.
 
-Each month features an original illustration inspired by the traditional Japanese flower-and-season themes:
+The cover shows a panorama of the four seasons, and each month features an original illustration inspired by the traditional Japanese flower-and-season themes:
 
 January – Pine and crane
 February – Plum blossom and bush warbler
@@ -49,7 +49,7 @@ July – Bush clover and wild boar
 August – Pampas grass and full moon
 September – Chrysanthemum and sake cup
 October – Maple leaves and deer
-November – Willow, swallow and rain
+November – Willow, mandarin ducks and rain
 December – Paulownia and phoenix
 
 Drawn in the style of traditional Japanese ukiyo-e woodblock prints, with soft colors and gentle indigo skies, this calendar brings a quiet touch of Japan to your kitchen, office or entryway all year long.
