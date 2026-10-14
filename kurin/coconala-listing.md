@@ -26,7 +26,7 @@
 2. プロフィールに、下の「プロフィールに足す文章」を足す（今の文章とバナーはそのまま）
 3. ~~本人確認~~（済み）
 4. 「出品する」→ 下の「出品画面に入れる文章」を項目ごとに貼る
-5. 画像に `kurin/coconala-thumbnail.png` を入れる
+5. 画像を入れる（この順番）：① `kurin/coconala-thumbnail.png`（メイン）② `kurin/coconala-sub-worries.png`（こんなお悩み）③ `kurin/coconala-sub-contents.png`（鑑定書の中身）④ `kurin/coconala-sub-flow.png`（鑑定の流れ）。②〜④はメイン画像の絵を使って Claude が文字を入れたもの
 6. 公開したら、出品ページの URL をこのチャットに貼る → X の投稿とプロフィールに入れる
 
 ---
