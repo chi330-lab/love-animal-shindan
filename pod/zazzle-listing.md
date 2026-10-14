@@ -1,5 +1,13 @@
 # Zazzle の出品文（英語）
 
+## 出品済み（2026-10-14）
+| 商品 | 商品 ID | リンク（日本版） |
+|---|---|---|
+| 2027 Japanese Seasonal Flowers Wall Calendar（ダブルページ 中・ロイヤリティ5%） | `256608475904701249` | https://www.zazzle.co.jp/2027_japanese_seasonal_flowers_wall_calendar_%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC-256608475904701249 |
+- リンクはオーナーがコピーして貼ってくれたもの（画面から読み取っていない）
+- Pinterest には **zazzle.com（アメリカ版）** のリンクを使う。アメリカ版で商品を開いて、そのアドレスをコピーしてもらう（まだ）
+- 説明文の最後の段落は「AI で作って、日本のデザイナーが1枚ずつ選んで並べた」に直した（絵を手で描き直してはいないため、本当のとおりに）
+
 ## 出品の手順（参考動画のやり方・ひとつずつ進める）
 1. カレンダーの型を開く：`zazzle.co.jp/custom/calendars` → いちばん左の **ダブルページ 中 カレンダー（ホワイト）**（日本円で3,289円、アメリカでは 22.95ドル。8.5×11インチ、上が絵・下がマス目）
 2. 「デザインを追加」→ 新しいタブでデザインの画面が開く。右にページの一覧（カバー・裏面・1〜12ページ、全部で14面）
@@ -56,7 +64,7 @@ Drawn in the style of traditional Japanese ukiyo-e woodblock prints, with soft c
 
 A thoughtful gift for friends and family who love Japanese art, nature and the changing seasons.
 
-Artwork was created with the help of AI tools and finished by the designer. These are original illustrations, not reproductions of any existing card designs.
+The artwork was created with AI tools, and each image was carefully chosen and arranged by the designer in Japan. These are original illustrations, not copies of any existing card designs.
 ```
 
 ## タグ（Tags）
