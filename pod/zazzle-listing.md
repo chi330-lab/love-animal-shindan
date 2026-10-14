@@ -9,6 +9,18 @@
   - オーナーがアメリカ版のページを開いて、アドレスをコピーして貼ってくれたもの。表紙と、ドルの値段（定価 $22.95、2026-10-14 はセールで $19.51）が出ることを確認した
 - 説明文の最後の段落は「AI で作って、日本のデザイナーが1枚ずつ選んで並べた」に直した（絵を手で描き直してはいないため、本当のとおりに）
 
+## ストアのストーリー（パソコンで「ストア完成」のリストから入れる・まだ）
+```
+Kisetsu means "seasons" in Japanese. In Japan, every month has its own flowers, birds and small celebrations, from cranes at New Year to cherry blossoms in spring, the autumn moon and red maple leaves. Kisetsu Art Studio shares these seasonal scenes in the style of traditional ukiyo-e woodblock prints. Our illustrations are made with AI tools, and each one is carefully chosen by a designer in Japan. We hope they bring a quiet moment of Japanese nature to your home, wherever you live.
+```
+
+## ストアのプロフィール（入れたもの）
+- 会社名：Kisetsu Art Studio／タグライン：Original Japanese seasonal art for your home
+- 概要（2026-10-14 に直した）：
+```
+Welcome to Kisetsu Art Studio. "Kisetsu" means "seasons" in Japanese. We create original illustrations inspired by Japanese flowers, birds and the changing seasons. Each design is made with AI tools and carefully chosen by a designer in Japan. We hope our designs bring a calm touch of Japan to your everyday life.
+```
+
 ## 出品の手順（参考動画のやり方・ひとつずつ進める）
 1. カレンダーの型を開く：`zazzle.co.jp/custom/calendars` → いちばん左の **ダブルページ 中 カレンダー（ホワイト）**（日本円で3,289円、アメリカでは 22.95ドル。8.5×11インチ、上が絵・下がマス目）
 2. 「デザインを追加」→ 新しいタブでデザインの画面が開く。右にページの一覧（カバー・裏面・1〜12ページ、全部で14面）
