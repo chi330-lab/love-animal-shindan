@@ -43,7 +43,7 @@ Original artwork made with AI tools and chosen by a designer in Japan. Find it o
 ## 投稿の記録
 | 日付 | 投稿したピン |
 |---|---|
-| 2026-10-14 | 0（表紙） |
+| 2026-10-14 | 0（表紙）・1（1月） |
 
 ## 投稿の順番（案）
 - 1日目：0（表紙）・1（1月）
