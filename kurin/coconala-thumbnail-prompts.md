@@ -5,7 +5,7 @@
 2. Model は **Recraft V4.1**（ふつうの絵。Vector ではない）。縦横の比は **1:1**
 3. 下の A〜C のどれかをコピーして貼る → 気に入った1枚を選ぶ
 4. Export → **PNG**、横 **1220** 以上で書き出す（「AI ラベル」のチェックは入れない）
-5. できた画像をこのチャットに送る → **Claude が日本語の文字（タイトルなど）を下の空いたところに入れて仕上げる**
+5. 文字なし版（A〜C）のときは、できた画像をこのチャットに送る → Claude が日本語の文字を入れる。文字入り版（A'・C'）はいちばん下
 
 > 文字は画像生成に入れてもらわない（日本語の文字はくずれやすいため）。そのため、指示文で **画面の下の3分の1を空けて** もらっている。
 
@@ -42,3 +42,27 @@ elegant soft illustration, a large gentle sun with soft glowing rays at the top 
 - 下が空かない → `large empty space at the bottom`
 - 暗い・重い → `bright, airy, high key lighting`
 - 子どもっぽい → `refined, sophisticated, for adult women`
+
+---
+
+## 文字も入れて作る場合（オーナーOK・2026-10-14）
+文字も画像生成に入れてもらう版。入れる文字は3つだけにしぼっている（多いとくずれやすい）。
+- 大きく：「依存させない恋愛タロット」
+- 帯：「鑑定書でお届け」
+- 小さく：「陽だまりの心の調律師 くりん」（「煦」はめずらしい漢字でくずれやすいので、ひらがなにした）
+
+**できたら必ず確認**：文字がまちがっていないか（とくに「依」「鑑」「調律」）。くずれていたら作り直すか、その絵をチャットに送ってもらえば Claude が文字だけ直す。
+
+### A'. 陽だまりとタロット＋文字（おすすめ）
+```
+soft warm watercolor illustration for a fortune-telling service thumbnail, a cozy sunlit windowsill in gentle morning light, three original tarot cards laid face down in a row on a cream linen cloth, card backs with an elegant original pattern of a sun and small stars in muted gold on dusty lavender, a small vase of chamomile flowers, a tiny brass bell, warm golden light rays, peaceful and healing mood, pastel palette of cream, honey yellow, soft coral and lavender, the illustration in the upper half, in the lower half clean Japanese typography on a plain cream background: a soft coral rounded ribbon with the white text "鑑定書でお届け", below it the large bold dark brown title "依存させない恋愛タロット", and at the very bottom small brown text "陽だまりの心の調律師 くりん", all text in Japanese, correctly spelled, clear and easy to read, rounded gentle Japanese font, no other text, no people, square 1:1 composition
+```
+
+### C'. 太陽と鈴＋文字（小さく表示されても目立つ）
+```
+elegant soft illustration for a fortune-telling service thumbnail, a large gentle sun with soft glowing rays at the top, below it three original tarot cards fanned out face down, card backs with an original sun and star pattern in muted gold on dusty lavender, a small golden bell with a coral ribbon beside the cards, tiny sparkles and chamomile flowers, dreamy warm healing mood, pastel palette of cream, honey yellow, soft coral and lavender, the illustration in the upper half, in the lower half clean Japanese typography on a plain cream background: a soft coral rounded ribbon with the white text "鑑定書でお届け", below it the large bold dark brown title "依存させない恋愛タロット", and at the very bottom small brown text "陽だまりの心の調律師 くりん", all text in Japanese, correctly spelled, clear and easy to read, rounded gentle Japanese font, no other text, no people, square 1:1 composition
+```
+
+### 文字がくずれるとき
+- 文字を2つに減らす：最後の「陽だまりの心の調律師 くりん」の部分を消す
+- Model を変えてみる：文字に強いモデル（Recraft の一覧で「text」や「typography」が得意と書かれているもの）
