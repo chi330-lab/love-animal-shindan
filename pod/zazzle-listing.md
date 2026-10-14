@@ -9,7 +9,7 @@
   - オーナーがアメリカ版のページを開いて、アドレスをコピーして貼ってくれたもの。表紙と、ドルの値段（定価 $22.95、2026-10-14 はセールで $19.51）が出ることを確認した
 - 説明文の最後の段落は「AI で作って、日本のデザイナーが1枚ずつ選んで並べた」に直した（絵を手で描き直してはいないため、本当のとおりに）
 
-## ストアのストーリー（パソコンで「ストア完成」のリストから入れる・まだ）
+## ストアのストーリー（2026-10-15 に「設定 → ストア情報を編集」の概要に入れた）
 ```
 Kisetsu means "seasons" in Japanese. In Japan, every month has its own flowers, birds and small celebrations, from cranes at New Year to cherry blossoms in spring, the autumn moon and red maple leaves. Kisetsu Art Studio shares these seasonal scenes in the style of traditional ukiyo-e woodblock prints. Our illustrations are made with AI tools, and each one is carefully chosen by a designer in Japan. We hope they bring a quiet moment of Japanese nature to your home, wherever you live.
 ```
