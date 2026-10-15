@@ -1,5 +1,14 @@
 # 2つ目のカレンダー：浮世絵風「四季の猫」（2027年）
 
+## 出品済み（2026-10-15）
+- 商品 ID `256041302746726297`
+- 日本版：https://www.zazzle.co.jp/2027_ukiyo_e_cats_of_the_seasons_wall_calendar_%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC-256041302746726297
+- アメリカ版（Pinterest に貼るのはこれ）：https://www.zazzle.com/2027_ukiyo_e_cats_of_the_seasons_wall_calendar-256041302746726297
+- 13枚（cat-00-cover・cat-01-jan〜cat-12-dec）完成。3月以降は、普通の Claude が `pod/cats-handoff.md` で案内した
+  - 3月：左（猫の全身が入っている方）／4月：藤が小さくさびしかったので「thick, full and lush clusters of purple wisteria hanging low and densely」を足して作り直し、猫が石の道で伸びをしている方
+  - 5月〜12月・表紙：オーナーが自分で選んだ
+- コレクション「2027 Calendars」には **まだ入れていない**
+
 ## 決めたこと（2026-10-15）
 - オーナーのリサーチ：海外（Etsy・Zazzle）では「浮世絵風の日本の動物（猫・柴犬）」「四季の風景」「禅・和モダン」が人気 → **四季の猫** に決めた
 - 1つ目（四季の花）と同じ浮世絵風・同じストア（Kisetsu Art Studio）で、一緒に見てもらえるようにする
