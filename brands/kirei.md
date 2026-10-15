@@ -34,6 +34,7 @@
 - Pinterest：タイプ別ピンの4枚目・知的クラシック（`pins/pin-kirei-classic.png`、2026-10-14）
 - Pinterest：タイプ別ピンの5枚目・ほっこりぬくもり（`pins/pin-kirei-cozy.png`、2026-10-14）
 - Pinterest：タイプ別ピンの6枚目・凛としたモダン（`pins/pin-kirei-cool.png`、2026-10-14）。**タイプ別6枚すべて投稿済み**
+- Pinterest：楽天の商品ピン・ラピスラズリ リップケアクリーム（AI画像、【PR】付き、2026-10-15）
 
 ## 進捗
 ### 2026-10-12
