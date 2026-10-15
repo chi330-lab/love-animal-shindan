@@ -6,6 +6,7 @@
 - 猫はどの月も **三毛猫（白・オレンジ・黒）** にして、13枚で同じ猫に見えるようにする
 - **実在の作家の名前（北斎・広重・巴水など）は指示文に入れない。** 有名なキャラクターの猫（招き猫の商品ロゴなど）もまねしない。オリジナルの猫にする
 - 絵は Recraft の有料プラン（V4.1 Vector・4:3・PNG 横2600）で作る。ファイル名は `cat-00-cover`、`cat-01-jan` 〜 `cat-12-dec`
+- **猫は大きく、まん中に**：1月の最初の2枚は猫が小さく端に寄った → 「a large calico cat … in the foreground, the whole cat filling about a third of the picture」を書き足した。2月以降の指示文もこの形にして使う
 - 祝日は買う人が国を選ぶので、日本の祝日・六曜は入らない（海外向けの「外玉」と同じ）
 
 ## 共通のスタイル（各月の指示文の最後に、もう入っています）
@@ -15,7 +16,8 @@ original illustration in the style of a traditional Japanese ukiyo-e woodblock p
 
 ## 各月の指示文（そのままコピーして貼る）
 
-### 1月　雪の松と猫（New Year cat）
+### 1月　雪の松と猫（New Year cat）✅ 完成（cat-01-jan.png）
+- 4枚のうち、雪の松・赤い日の出・緑の丘のバランスがいい1枚をオーナーが選んだ（猫の体が端で切れていないことをオーナーが確認）
 ```
 a calico cat with white, orange and black patches curled up and resting beneath an old pine tree with snow on its branches, a red rising sun over distant snowy hills, peaceful New Year morning, original illustration in the style of a traditional Japanese ukiyo-e woodblock print, the cat large and fully visible from ears to tail, not cut off at the edges, natural cat proportions, gentle and charming but not cartoonish, fine delicate linework, warm soft colors with clear accents, indigo gradient band fading at the top of the sky, subtle washi paper texture, no people, no text, no letters, no numbers, no signature, no seal stamp, no border, landscape 4:3 composition
 ```
