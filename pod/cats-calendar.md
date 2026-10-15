@@ -7,7 +7,8 @@
 - 13枚（cat-00-cover・cat-01-jan〜cat-12-dec）完成。3月以降は、普通の Claude が `pod/cats-handoff.md` で案内した
   - 3月：左（猫の全身が入っている方）／4月：藤が小さくさびしかったので「thick, full and lush clusters of purple wisteria hanging low and densely」を足して作り直し、猫が石の道で伸びをしている方
   - 5月〜12月・表紙：オーナーが自分で選んだ
-- コレクション「2027 Calendars」には **まだ入れていない**
+- コレクション「2027 Calendars」に入れた（2026-10-15）
+- Pinterest の文章は `pod/pinterest-texts.md` の「2つ目：四季の猫カレンダーのピン」
 
 ## 決めたこと（2026-10-15）
 - オーナーのリサーチ：海外（Etsy・Zazzle）では「浮世絵風の日本の動物（猫・柴犬）」「四季の風景」「禅・和モダン」が人気 → **四季の猫** に決めた
