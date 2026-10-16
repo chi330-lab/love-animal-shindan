@@ -66,3 +66,19 @@ elegant soft illustration for a fortune-telling service thumbnail, a large gentl
 ### 文字がくずれるとき
 - 文字を2つに減らす：最後の「陽だまりの心の調律師 くりん」の部分を消す
 - Model を変えてみる：文字に強いモデル（Recraft の一覧で「text」や「typography」が得意と書かれているもの）
+
+---
+
+## ② 人生の鑑定（40代・50代向け）のメイン画像（2026-10-16）
+恋愛の鑑定の画像（窓辺・カード3枚）と雰囲気をそろえて、**夕方のやわらかい光**と、**数字を書いたノート（数秘術）**を足した。文字も入れる。Recraft V4.1、1:1。
+
+入れる文字（4つ）：
+- 帯：「鑑定書でお届け」
+- 大きく：「40代50代からの人生鑑定」
+- 中くらい：「タロット・数秘術」
+- 小さく：「陽だまりの心の調律師 くりん」
+
+```
+soft warm watercolor illustration for a fortune-telling service thumbnail, a cozy windowsill in gentle late afternoon golden light, three original tarot cards laid face down in a row on a cream linen cloth, card backs with an elegant original pattern of a sun and small stars in muted gold on dusty lavender, beside the cards an open vintage notebook with a few small handwritten numbers in gold ink, a cup of tea, a small vase of chamomile and lavender, calm mature and elegant mood for women in their forties and fifties, pastel palette of cream, honey yellow, soft coral and lavender, the illustration in the upper half, in the lower half clean Japanese typography on a plain cream background: a soft coral rounded ribbon with the white text "鑑定書でお届け", below it the large bold dark brown title "40代50代からの人生鑑定", below it medium lavender text "タロット・数秘術", and at the very bottom small brown text "陽だまりの心の調律師 くりん", all text in Japanese, correctly spelled, clear and easy to read, rounded gentle Japanese font, no other text, no people, square 1:1 composition
+```
+できたら確認：文字（とくに「鑑」「秘」「術」「調律」）がまちがっていないか。くずれていたらチャットに送れば、Claude が文字だけ直す。
