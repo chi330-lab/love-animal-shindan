@@ -44,7 +44,7 @@ Original artwork made with AI tools and chosen by a designer in Japan. Find it o
 | 日付 | 投稿したピン |
 |---|---|
 | 2026-10-14 | 0（表紙）・1（1月） |
-| 2026-10-15 | 3（桜）・10（紅葉）・猫 c0（表紙、新ボード Japanese Cat Art Calendar 2027）・12（鳳凰・17時ごろ） |
+| 2026-10-15 | 3（桜）・10（紅葉）・猫 c0（表紙、新ボード Japanese Cat Art Calendar 2027）・12（鳳凰・17時ごろ）・猫 c12（こたつ・夜） |
 
 ## 投稿の順番（案）
 - 1日目：0（表紙）・1（1月）
