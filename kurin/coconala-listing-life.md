@@ -135,8 +135,11 @@
 6. Q：`占いに頼りすぎてしまうのが心配です。`
    A：`わたし自身、占いに頼りすぎた経験があるので、そのお気持ちがよくわかります。この鑑定は、答えを言い切るのではなく、あなたが自分で選べるようになるためのものです。`
 
-### 画像
-- メイン画像：Recraft で作る（指示文は `kurin/coconala-thumbnail-prompts.md` の「② 人生の鑑定」）。できたらチャットに送る → Claude が説明画像（お悩み・鑑定書の中身・流れ）を作る
+### 画像（この順番で入れる）
+1. `kurin/coconala-life-thumbnail.png`（メイン。Recraft で文字入り・2026-10-17 完成。文字のまちがいなし）
+2. `kurin/coconala-life-sub-worries.png`（こんなお悩み）
+3. `kurin/coconala-life-sub-contents.png`（お届けする鑑定書）
+4. `kurin/coconala-life-sub-flow.png`（鑑定の流れ）
 
 ---
 
