@@ -82,6 +82,7 @@
 - 2つ目の出品のメイン画像を Recraft で作った（文字のまちがいなし）→ `kurin/coconala-life-thumbnail.png`。Claude が説明画像3枚を作った（`kurin/coconala-life-sub-*.png`）
 
 ## 次にやること
+0. **これからの告知投稿は、ふつうの Claude に作ってもらう**：指示書 `kurin/handoff-x-announce.md`（オーナーの希望・2026-10-17）。今ある告知（10/18・10/19・10/20）が終わったら、次の週の分をたのむ
 0. **ココナラ2つ目（人生の鑑定）を広める**：告知を X に出す（`kurin/x-posts-coconala-launch.md` の「2つ目のお知らせ」、10/19 夜がおすすめ）
 0. **ココナラの文章鑑定を広める**（出品済み：https://coconala.com/services/4451374 ）
    - X の自己紹介の最後に「📜ココナラで文章鑑定はじめました👇」の1行を足す（まだなら）
