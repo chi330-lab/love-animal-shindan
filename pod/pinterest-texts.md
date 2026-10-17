@@ -41,10 +41,15 @@ Original artwork made with AI tools and chosen by a designer in Japan. Find it o
 | 12 | 12-dec | Phoenix and Paulownia Japanese Art | A phoenix rises over paulownia flowers — a wish for good fortune at the end of the year. December of our 2027 calendar. | Colorful phoenix with a long rainbow tail flying above purple paulownia flowers and golden clouds |
 
 ## 投稿の記録
+> 2026-10-17 から Pinterest の **予約投稿** を使っている（日時は日本時間か確認する。予約のときも「AI 修正画像」のラベルをオン）
 | 日付 | 投稿したピン |
 |---|---|
 | 2026-10-14 | 0（表紙）・1（1月） |
 | 2026-10-15 | 3（桜）・10（紅葉）・猫 c0（表紙、新ボード Japanese Cat Art Calendar 2027）・12（鳳凰・17時ごろ）・猫 c12（こたつ・夜） |
+| 2026-10-16 | 花11（おしどり）・猫c1・花8（普通の Claude が案内） |
+| 2026-10-17 | 猫c10・花9。予約：猫c3（18:00）・花2（21:00） |
+| 予約済み | 猫c2（10/18 9:00） |
+| 予約する予定 | 花4（10/18 12:00）・猫c4（15:00）・花5（18:00）／猫c5（10/19 9:00）・花6（12:00）・猫c6（15:00）・花7（18:00）／猫c7（10/20 9:00）・猫c8（12:00）・猫c9（15:00）・猫c11（18:00） |
 
 ## 投稿の順番（案）
 - 1日目：0（表紙）・1（1月）
