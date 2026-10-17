@@ -77,8 +77,12 @@
 - オーナーと相談して、**40代・50代向けの「これからの人生」の鑑定**を2つ目として出すことにした（恋愛の鑑定はそのまま）。**タロットと数秘術の2つ**で見る（星読みも入れる案は、オーナーの判断でやめた）。2,500円（お試し）→ 口コミ10件で 5,000円、5日、同時2件
 - 出品文：`kurin/coconala-listing-life.md`／画像の指示文：`kurin/coconala-thumbnail-prompts.md` の「② 人生の鑑定」／下書きの依頼文：`kurin/kantei-draft-prompt.md` の「②」
 
+### 2026-10-17
+- **ココナラに2つ目を出品した**：https://coconala.com/services/4456143 （40代50代の人生の鑑定・タイトル「人生の後半をタロットと数秘術で鑑定します」・タロットと数秘術・2,500円・5日・同時2件）。タイトル欄で「25文字以下」のエラーが字数が足りていても消えなかったが、最後は通った
+- 2つ目の出品のメイン画像を Recraft で作った（文字のまちがいなし）→ `kurin/coconala-life-thumbnail.png`。Claude が説明画像3枚を作った（`kurin/coconala-life-sub-*.png`）
+
 ## 次にやること
-0. **ココナラに2つ目（40代50代からの人生の鑑定）を出品する**：Recraft でメイン画像を作る（`kurin/coconala-thumbnail-prompts.md` の「②」）→ チャットに送る → Claude が説明画像3枚を作る → `kurin/coconala-listing-life.md` を貼って出品
+0. **ココナラ2つ目（人生の鑑定）を広める**：告知を X に出す（`kurin/x-posts-coconala-launch.md` の「2つ目のお知らせ」、10/19 夜がおすすめ）
 0. **ココナラの文章鑑定を広める**（出品済み：https://coconala.com/services/4451374 ）
    - X の自己紹介の最後に「📜ココナラで文章鑑定はじめました👇」の1行を足す（まだなら）
    - 告知の投稿は `kurin/x-posts-coconala-launch.md`（URL 入り）。1日目は投稿済み（10/15）。2日目＝10/16、4日目＝10/18、6日目＝10/20 の夜21〜22時の枠に入れる
