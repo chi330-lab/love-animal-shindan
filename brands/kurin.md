@@ -78,7 +78,7 @@
 - 出品文：`kurin/coconala-listing-life.md`／画像の指示文：`kurin/coconala-thumbnail-prompts.md` の「② 人生の鑑定」／下書きの依頼文：`kurin/kantei-draft-prompt.md` の「②」
 
 ### 2026-10-17
-- **ココナラに2つ目を出品した**：https://coconala.com/services/4456143 （40代50代の人生の鑑定・タロットと数秘術・2,500円・5日・同時2件）。タイトル欄で「25文字以下」のエラーが字数が足りていても消えなかったが、最後は通った
+- **ココナラに2つ目を出品した**：https://coconala.com/services/4456143 （40代50代の人生の鑑定・タイトル「人生の後半をタロットと数秘術で鑑定します」・タロットと数秘術・2,500円・5日・同時2件）。タイトル欄で「25文字以下」のエラーが字数が足りていても消えなかったが、最後は通った
 - 2つ目の出品のメイン画像を Recraft で作った（文字のまちがいなし）→ `kurin/coconala-life-thumbnail.png`。Claude が説明画像3枚を作った（`kurin/coconala-life-sub-*.png`）
 
 ## 次にやること
