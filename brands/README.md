@@ -7,7 +7,7 @@
 |---|---|---|
 | 煦鈴（くりん）｜占い・恋愛動物診断 | `brands/kurin.md` | `brands/kurin.md と BUSINESS_PLAN.md の理念を読んで、続きからやって` |
 | 50代からのキレイと暮らし｜美容・Pinterest・楽天 | `brands/kirei.md` | `brands/kirei.md と BUSINESS_PLAN.md の理念を読んで、続きからやって` |
-| なお｜結婚30年の妻｜note | `brands/nao.md` | `brands/nao.md と BUSINESS_PLAN.md の理念を読んで、続きからやって` |
+| なお｜結婚30年の妻｜note（2026-10-17〜 別の AI エージェントが担当・報告だけ本社へ） | `brands/nao.md`、引き継ぎ書 `nao/HIKITSUGI.md` | 新しいエージェントには引き継ぎ書を渡す |
 | 海外向けプリントオンデマンド（Zazzle × AI カレンダー） | `brands/pod.md` | `brands/pod.md と BUSINESS_PLAN.md の理念を読んで、続きからやって` |
 | 本社（全体の数字・週次チェック・新しい柱） | `BUSINESS_PLAN.md` | `BUSINESS_PLAN.md の進捗ログを読んで、続きからやって` |
 
