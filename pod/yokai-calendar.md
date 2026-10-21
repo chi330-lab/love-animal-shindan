@@ -8,6 +8,7 @@
 - 日本版：https://www.zazzle.co.jp/2027_ukiyo_e_yokai_seasons_wall_calendar_%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC-256184758819839216
 - アメリカ版（Pinterest に貼るのはこれ）：https://www.zazzle.com/2027_ukiyo_e_yokai_seasons_wall_calendar-256184758819839216
 - 13枚（Recraft V4.1 Vector・4:3・PNG 横2600）完成。コレクション「2027 Calendars」に追加済み。普通の Claude で作った
+- **出品ページの説明文は、このファイル下の「概要」とちがう**（普通の Claude が絵に合わせて直したものを貼った）：「Mysterious and playful rather than scary」、2月は「A red oni dodging flying Setsubun beans」、「friendly」は消してある。タグ10個（最後 generative content）・レーティング G・アメリカ版でドル表示を、2026-10-21 にオーナーが確認。直すところなし
 
 ## 作ってわかったこと（2026-10-21・次の絵づくりにも使う）
 - **描き方**：最初の指示文だとアニメのようなかわいいキャラクターになった → **昔の妖怪絵の巻物風**（細い墨の線、藍・朱・黄土色、小さい目、かわいすぎない）に変えた。下の指示文は最初のままなので、作り直すときはこの描き方を足す
