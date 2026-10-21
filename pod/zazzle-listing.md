@@ -5,7 +5,9 @@
 |---|---|---|
 | 2027 Japanese Seasonal Flowers Wall Calendar（ダブルページ 中・ロイヤリティ5%） | `256608475904701249` | https://www.zazzle.co.jp/2027_japanese_seasonal_flowers_wall_calendar_%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC-256608475904701249 |
 | 2027 Ukiyo-e Cats of the Seasons Wall Calendar（2つ目・四季の猫、2026-10-15） | `256041302746726297` | https://www.zazzle.co.jp/2027_ukiyo_e_cats_of_the_seasons_wall_calendar_%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC-256041302746726297 |
+| 2027 Ukiyo-e Shiba Inu Seasons Wall Calendar（3つ目・四季の柴犬、2026-10-21） | `256402179143302411` | https://www.zazzle.co.jp/2027_ukiyo_e_shiba_inu_seasons_wall_calendar_%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC-256402179143302411 |
 - リンクはオーナーがコピーして貼ってくれたもの（画面から読み取っていない）
+- **3つ目（柴犬）のアメリカ版リンク：** https://www.zazzle.com/2027_ukiyo_e_shiba_inu_seasons_wall_calendar-256402179143302411
 - **2つ目（猫）のアメリカ版リンク：** https://www.zazzle.com/2027_ukiyo_e_cats_of_the_seasons_wall_calendar-256041302746726297
 - **アメリカ版のリンク（Pinterest に貼るのはこれ）：** https://www.zazzle.com/2027_japanese_seasonal_flowers_wall_calendar-256608475904701249
   - オーナーがアメリカ版のページを開いて、アドレスをコピーして貼ってくれたもの。表紙と、ドルの値段（定価 $22.95、2026-10-14 はセールで $19.51）が出ることを確認した
