@@ -231,11 +231,14 @@ const OFFERS = {
     url:"https://px.a8.net/svt/ejp?a8mat=45G0HT+2W6X6Q+2PEO+C3BAQ",
     pixel:"https://www10.a8.net/0.gif?a8mat=45G0HT+2W6X6Q+2PEO+C3BAQ"
   },
+  /* バチェラーデート（A8.net・2026-10 承認）。説明文は自分たちの言葉で書く（A8.net の PR 文はそのまま使わない）。
+     「必ず出会える」などの約束はしない。人物の画像は使わない。50歳以上の申込は成果にならない */
   matching: {
-    title:"価値観で探せるマッチングアプリ",
-    text:"性格や価値観の診断から、相性のいい相手を探せる。（18歳以上・独身の方向け）",
-    cta:"アプリをチェックする",
-    url:""
+    title:"バチェラーデート",
+    text:"メッセージのやりとりを重ねなくても、AIがお相手とのデートの日程を調整してくれるサービス。忙しくて、出会いに時間をかけにくい人に。",
+    note:"20〜40代の独身の方向け・18歳以上",
+    cta:"どんなサービスか見てみる",
+    url:"https://px.a8.net/svt/ejp?a8mat=4BED92+9Z0G3M+5SFC+BWVTE"
   },
   counseling: {
     title:"オンラインの恋愛・心理カウンセリング",
@@ -282,6 +285,7 @@ function renderRecs(key, lede){
         <a class="rec" href="${o.url}" target="_blank" rel="sponsored noopener" data-offer="${o.id}">
           <div class="rec-top"><span class="rec-pr">PR</span><span class="rec-title">${o.title}</span></div>
           <div class="rec-text">${o.text}</div>
+          ${o.note ? `<div class="rec-who">${o.note}</div>` : ''}
           <span class="rec-cta">${o.cta} &rarr;</span>
         </a>
         ${o.pixel ? `<img src="${o.pixel}" width="1" height="1" alt="" style="position:absolute; width:1px; height:1px; border:0;">` : ''}
