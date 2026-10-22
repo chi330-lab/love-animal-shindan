@@ -21,7 +21,7 @@
   - 否認条件：50歳以上の申込／不正・重複／即退会／ログインがない場合／リスティング違反（社名・サービス名での広告出稿はしない）
   - 広告を出したページの URL を、A8.net の「広告掲載URL管理」に出す（広告主が求めたら開示する）：https://chi330-lab.github.io/love-animal-shindan/ と https://chi330-lab.github.io/love-animal-shindan/aisho/
   - リンクの飛び先は https://new.bachelorapp.net/ma 内。人物画像は NG
-  - インプレッション計測用の画像（0.gif）は未設定（A8.net の広告リンク画面に「画像」のコードがあれば、その URL を `OFFERS.matching.pixel` に入れる）
+  - 表示回数を数える画像（0.gif）も設定済み：`OFFERS.matching.pixel` = https://www17.a8.net/0.gif?a8mat=4BED92+9Z0G3M+5SFC+BWVTE
 - 恋愛相談カウンセリング（s00000000979019）：審査中 → 通ったら `OFFERS.counseling.url`（子犬・うさぎ）
 - 1画面に出す広告は最大2つ（`MAX_RECS`）
 

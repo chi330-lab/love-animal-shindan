@@ -238,7 +238,8 @@ const OFFERS = {
     text:"メッセージのやりとりを重ねなくても、AIがお相手とのデートの日程を調整してくれるサービス。忙しくて、出会いに時間をかけにくい人に。",
     note:"20〜40代の独身の方向け・18歳以上",
     cta:"どんなサービスか見てみる",
-    url:"https://px.a8.net/svt/ejp?a8mat=4BED92+9Z0G3M+5SFC+BWVTE"
+    url:"https://px.a8.net/svt/ejp?a8mat=4BED92+9Z0G3M+5SFC+BWVTE",
+    pixel:"https://www17.a8.net/0.gif?a8mat=4BED92+9Z0G3M+5SFC+BWVTE"
   },
   counseling: {
     title:"オンラインの恋愛・心理カウンセリング",
