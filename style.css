@@ -169,5 +169,6 @@
   .rec-pr{font-size:9.5px; letter-spacing:.08em; padding:2px 6px; border-radius:4px; border:1px solid var(--muted); color:var(--muted);}
   .rec-title{font-weight:700; font-size:14px;}
   .rec-text{font-size:12.5px; line-height:1.7; color:var(--muted);}
+  .rec-who{margin-top:6px; font-size:10.5px; color:var(--muted); opacity:.85;}
   .rec-cta{display:block; margin-top:8px; font-size:12px; color:var(--gold-soft);}
   .recs-note{text-align:center; font-size:10.5px; color:var(--muted); opacity:.75; line-height:1.7;}
