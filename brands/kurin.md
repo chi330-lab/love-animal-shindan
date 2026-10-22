@@ -13,13 +13,13 @@
 - 計測：GA4 `G-JJY0KPQSFB`、Search Console 登録済み、`sitemap.xml`
 
 ## 広告（A8.net）
-- ココナラ電話占い：提携中。リンク設定済み（サイトID 003 用）。全タイプに表示
+- ココナラ電話占い：提携中。リンク設定済み（サイトID 003 用）。全タイプに表示。広告掲載URL管理にも2つのページを登録済み（2026-10-22）
 - バチェラーデート（マッチング）：**承認済み・設定済み**（2026-10-22）。`OFFERS.matching`（白鳥・梟に1つ目、狐に2つ目として表示）
   - リンク：https://px.a8.net/svt/ejp?a8mat=4BED92+9Z0G3M+5SFC+BWVTE （A8.net のリンク文言：「AIが全自動でデートをセッティング！忙しい人のための出会い【バチェラーデート】」。サイトの説明文は自分たちの言葉で書いた）
   - 表示：「PR」と rel="sponsored"、広告の中に小さく「20〜40代の独身の方向け・18歳以上」。人物の画像は使わない。A8.net の PR 文（「完全審査制」「累計150万人」「安心・安全」など）や「必ず出会える」などの約束は使わない
   - 成果条件：新規の無料会員登録の完了
   - 否認条件：50歳以上の申込／不正・重複／即退会／ログインがない場合／リスティング違反（社名・サービス名での広告出稿はしない）
-  - 広告を出したページの URL を、A8.net の「広告掲載URL管理」に出す（広告主が求めたら開示する）：https://chi330-lab.github.io/love-animal-shindan/ と https://chi330-lab.github.io/love-animal-shindan/aisho/
+  - 広告を出したページの URL を、A8.net の「広告掲載URL管理」に出す（広告主が求めたら開示する）：**登録済み（2026-10-22）**。https://chi330-lab.github.io/love-animal-shindan/ と https://chi330-lab.github.io/love-animal-shindan/aisho/
   - リンクの飛び先は https://new.bachelorapp.net/ma 内。人物画像は NG
   - 表示回数を数える画像（0.gif）も設定済み：`OFFERS.matching.pixel` = https://www17.a8.net/0.gif?a8mat=4BED92+9Z0G3M+5SFC+BWVTE
 - 恋愛相談カウンセリング（s00000000979019）：審査中 → 通ったら `OFFERS.counseling.url`（子犬・うさぎ）
@@ -90,10 +90,10 @@
 - 2つ目の出品のメイン画像を Recraft で作った（文字のまちがいなし）→ `kurin/coconala-life-thumbnail.png`。Claude が説明画像3枚を作った（`kurin/coconala-life-sub-*.png`）
 
 ### 2026-10-22
-- A8.net のバチェラーデートが承認された → `common.js` の `OFFERS.matching` に設定。白鳥・梟の結果画面に1つ目の広告として出ることを確認した
+- A8.net のバチェラーデートが承認された → `common.js` の `OFFERS.matching` に設定（表示回数の計測用画像も）。白鳥・梟の結果画面に1つ目の広告として出ることを確認した
+- A8.net の「広告掲載URL管理」に、バチェラーデートとココナラ電話占いの両方で、index と aisho の2ページを登録した（オーナー）
 
 ## 次にやること
-0. **A8.net の「広告掲載URL管理」に、バチェラーデートを出すページを登録する**：https://chi330-lab.github.io/love-animal-shindan/ と https://chi330-lab.github.io/love-animal-shindan/aisho/
 0. **ターゲット**（2026-10-21）：`brands/target.md` の3つの質問。A（恋の迷い）とB（人生の後半の迷い）のどちらに向けた投稿・商品かを決めてから作る
 0. **学びメモを使う**（2026-10-20）：`brands/manabi.md` の「デジタル商品7ステップ」。講座づくりとココナラの説明文の見直しに使う（結果は約束しない・ない口コミは作らない・悩みはやさしく気づかせる形で入れ、あおらない）
 0. **10/18〜10/24 の X（1日5本×7日）を予約投稿する**：`kurin/x-posts-week-1018.md`（ふつうの Claude が作成）。7:30＝今日のタロット・今日の数秘（毎朝カードを引いて【 】に入れる）、12:00＝型の投稿、18:00＝タロット・数秘のひとつ話、21:00＝ココナラ告知、22:00＝寝る前のひとこと。前の告知（launch の4日目・2つ目のお知らせ・6日目）と「1日3本」の形は、この週は使わない。10/24 に反応を見て、次の週の分をふつうの Claude にたのむ
